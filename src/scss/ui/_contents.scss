@@ -324,6 +324,14 @@ p.card-text a {
     background-color:  #FFFFFF;
 }
 
+.accordion-buttons {
+    border: none;
+    text-align: left;
+    background-color:  $r2;
+    color: $blanco;
+    border-bottom: 3px solid $blanco;
+}
+
 .accordion-button:not(.collapsed) {
     
     border-radius: 8px;
@@ -452,46 +460,56 @@ span.icono-destacada.material-icons-outlined {
     100%{background-position:0% 50%}
 }*/
 
+.conoce-planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    min-width: 375px;
+
+    background: $r2;
+    align-items: center;
+    margin-top: 60px;
+} 
+
+.titulo_planes {
+    min-width: 375px;
+    max-width: 900px;
+    width: 100%;
+    align-self: center;
+    width: 375px;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: $blanco;
+}
+
 .card-content {
+    width: 420px;
     transition: all 0.3s ease-in;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border: 2px solid $white;
-    border-radius: 8px;
+    align-items: center;
+    gap: 16px;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
 
     &:hover{
         transition: all 0.3s ease-in;
         transform: translateY(10px) scale();
         z-index: 99;
-        border: 2px solid #008EC4;;
+        
     }
-
 }
+
 
 .card-content .card-body{
     padding: 0px;
-}
-
-.card-content div a{
-    width: 100%;
-    text-decoration: none;
-    .h5{
-        height: 85px;
-        //background-color: red;
-    }
-}
-
-.card-content div p a {
-    //height: 250px;
-    padding: 10px 20px;
-}
-
-.card-content a {
-    text-align: center;
-    img{
-        width: 68px;
-        padding-top: 16px;
-    }
 }
 
 .container-btn {
@@ -1135,8 +1153,8 @@ span.ic-form {
 }
 
 .btn.btn-ver-mas {
-    width: 147px;
-    height: 48px;
+    width: auto;
+    height: auto;
     border: 3px solid $r4;
     border-radius: 8px;
     color: $r4;
@@ -1146,3 +1164,84 @@ span.ic-form {
         color: $r1;
     }
 }
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 325px;
+    height: px;
+    background: $blanco;
+    border: 1px solid $g3;
+    border-radius: 16px;
+    transition: all 0.3s ease-in;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 2px solid $white;
+    border-radius: 16px;
+    border-color: $g3;
+    margin-top: 0px;
+    margin: 20px;
+
+    &:hover{
+        transition: all 0.3s ease-in;
+        transform: translateY(10px) scale();
+        z-index: 99;
+        border: 2px solid $g3;
+    }
+}
+
+.card-content-dos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 327px;
+    height: 232px;
+    background: $blanco;
+    border: 1px solid $g3;
+    border-radius: 16px;
+    transition: all 0.3s ease-in;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: 2px solid $white;
+    border-radius: 16px;
+    border-color: $g3;
+    margin-top: 0px;
+    margin: 20px;
+    
+    &:hover{
+        transition: all 0.3s ease-in;
+        transform: translateY(10px) scale();
+        z-index: 99;
+        border: 2px solid $g3;
+        }
+
+}
+
+.card-content-tres {
+    position: relative;
+    align-items: center;
+    padding: 0px;
+    width: 327px;
+    height: 64px;
+    margin-top: 0px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.card-content-planes {
+    position: relative;
+    align-items: center;
+    padding: 0px;
+    width: 279px;
+    height: 64px;
+    margin-top: 0px;
+    margin: 20px;
+    border-radius: 8px;
+}
+

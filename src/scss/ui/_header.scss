@@ -214,3 +214,58 @@ h5.title-form{
 }
 
 //Fin header
+
+.header--title-container {
+    position: absolute;
+    width: 90%;
+    top: 250px;
+    left: center;
+    margin-left: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    z-index: 1000;
+}
+
+.header--title-container .header--button {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    gap: 8px;
+    width: 163px;
+    height: 48px;
+    background: $r4;
+    border-radius: 8px;
+}
+
+.button-planes {
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    gap: 8px;
+    min-width: 120px;
+    height: 48px;
+    background: $r4;
+    border-radius: 8px;
+}
+
+
+.p-planes {
+    display: flex;
+    flex-direction: column;
+    min-width: 327px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: $blanco;
+}
