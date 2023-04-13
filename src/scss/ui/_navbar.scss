@@ -43,12 +43,10 @@ li.categoria span {
 
 img.logo-bnp {
     width: 150px;
-    transition: all 0.3s ease-in;
 }
 
 img.logo-bnp-small {
-    width: 75px;
-    transition: all 0.3s ease-in;
+    width: 150px;
 }
 
 img.logo-cslc {
@@ -90,7 +88,7 @@ img.logo-cslc-small {
     position: absolute;
     height: 3px;
     width: 100%;
-    background: $primary;
+    background: $negro;
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -145,7 +143,7 @@ img.logo-cslc-small {
 /* Color of 3 lines */
 
 .navbar-toggler.collapsed .toggler-icon {
-    background: $primary;
+    background: $negro;
 }
 
 .btn.btn-volver {

@@ -3,6 +3,7 @@ $blue:    #0095C5 !default;
 //Variables
 $primary: #A6000E;
 $secundario: #FFB300;
+$secondary: $blue;
 $gris-dark: #3E4545;
 $gris-darker: #666;
 $white: #fff;
@@ -12,8 +13,6 @@ $gris-light: #ccc;
 $gris-intermedio: #e7e7e7;
 $backgris: #F8F8F8;
 $black: #000;
-
-
 
 $r1: #6D0009;
 $r2: #A6000E;
@@ -44,17 +43,17 @@ $alert-border-width:  4px;
 
 //Carousel
 $carousel-indicator-height: 8px;
-$carousel-indicator-active-bg: $secundario;
+$carousel-indicator-active-bg: $primary;
 $carousel-indicator-opacity:         .3;
 
 $badge-font-size:                   0.9em;
 //Inputs
-$input-focus-border-color:#008EC4;
+$input-focus-border-color:$negro;
 $input-border-radius: 8px;
-$input-border-color: #0076A9;
-$input-focus-color: $primary;
+$input-border-color: $negro;
+$input-focus-color: $negro;
 $input-focus-width: 3px;
-$input-focus-box-shadow: $secundario;
+$input-focus-box-shadow: $negro;
 
 //Botones
 $btn-border-radius: 24px;
@@ -71,7 +70,7 @@ $navbar-toggler-border-radius: 0px;
 
 //Nav-tabs
 $nav-tabs-border-radius: 0px;
-$nav-tabs-link-active-color: $blue;
+$nav-tabs-link-active-color: $negro;
 
 //Modal
 $modal-content-border-radius: 24px;
@@ -155,18 +154,3 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
 
 // Importar Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -42px;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-bottom: 1rem;
-  margin-left: 15%;
-  list-style: none;
-}

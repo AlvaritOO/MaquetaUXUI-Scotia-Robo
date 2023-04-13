@@ -29,7 +29,7 @@
     }
     
     .espaciado-cabecera{
-        margin-top: 50px;
+        margin-top: 0px;
     }
     
     
@@ -228,7 +228,7 @@
     @include media-breakpoint-only(md) {
     
         .espaciado-cabecera{
-            margin-top: 50px;
+            margin-top: 0px;
         }
     
         .texto-imagen-cabecera {
