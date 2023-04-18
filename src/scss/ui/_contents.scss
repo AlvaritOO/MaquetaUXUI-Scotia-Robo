@@ -1269,4 +1269,22 @@ span.ic-form {
     margin-bottom: 1rem;
     margin-left: 15%;
     list-style: none;
-  }
+}
+
+.body-buttom{
+    padding: 24px;
+    height: auto;
+    width: 70%;
+    min-width: 375px;
+}
+
+.select-button {
+    border: none;
+    text-align: left;
+    border-radius: 0;
+    border-bottom: 2px solid $negro;
+}
+
+.select-button.select-button:after { 
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
