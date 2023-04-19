@@ -7146,8 +7146,16 @@ textarea.form-control-lg {
   top: 30% !important;
 }
 
+.top-32 {
+  top: 32% !important;
+}
+
 .top-35 {
   top: 35% !important;
+}
+
+.top-36 {
+  top: 36% !important;
 }
 
 .top-40 {
@@ -7278,8 +7286,16 @@ textarea.form-control-lg {
   bottom: 30% !important;
 }
 
+.bottom-32 {
+  bottom: 32% !important;
+}
+
 .bottom-35 {
   bottom: 35% !important;
+}
+
+.bottom-36 {
+  bottom: 36% !important;
 }
 
 .bottom-40 {
@@ -7410,8 +7426,16 @@ textarea.form-control-lg {
   left: 30% !important;
 }
 
+.start-32 {
+  left: 32% !important;
+}
+
 .start-35 {
   left: 35% !important;
+}
+
+.start-36 {
+  left: 36% !important;
 }
 
 .start-40 {
@@ -7542,8 +7566,16 @@ textarea.form-control-lg {
   right: 30% !important;
 }
 
+.end-32 {
+  right: 32% !important;
+}
+
 .end-35 {
   right: 35% !important;
+}
+
+.end-36 {
+  right: 36% !important;
 }
 
 .end-40 {
@@ -12460,6 +12492,32 @@ span.ic-form {
 
 .select-button.select-button:after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.stepper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  min-width: 275px;
+  height: auto;
+}
+
+.stepper-progres-active {
+  width: 186.67px;
+  border: 3px solid #EC111A;
+}
+
+.stepper-progres {
+  width: 186.67px;
+  border: 3px solid #D6D6D6;
+}
+
+.steppers {
+  align-items: center;
+  gap: 10px;
+  min-width: 275px;
+  height: auto;
 }
 
 p.text-legales {
