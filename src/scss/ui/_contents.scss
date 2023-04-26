@@ -761,7 +761,6 @@ p.title-folleto {
     height: 70px;
 }
 
-// fin planes PostVenta
 
 //otros
 .espaciador{
@@ -769,15 +768,24 @@ p.title-folleto {
 }
 
 .btn-primary {
-    color: $white;
-    background: #0076A9;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    gap: 8px;
+    background: $r4;
+    border-radius: 8px;
 }
 
 .btn-primary:hover {
     color: $white;
-    background: #00648F;
-
+    background: $r4;
+    border-radius: 8px;
 }
+
 
 .contenedor-imagen-categoria {
     height: 650px;
