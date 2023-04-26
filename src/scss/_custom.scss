@@ -16,77 +16,23 @@ $blanco: #FFFFFF;
 
 $primary: #A6000E;
 
-
-//Alerts
-$alert-border-width:  4px;
-
-
-//Navbar
-$navbar-toggler-border-radius: 0px;
-
-//Nav-tabs
-$nav-tabs-border-radius: 0px;
-
-
 //Modal
 $modal-content-border-radius: 24px;
 
-//ACCORDION
-$accordion-button-color: $negro;
-$accordion-icon-active-color:  $negro;
-$accordion-button-active-bg:  $g4;
 
-
-$position-values: (
-  0: 0,
-  1:1%,
-  2:2%,
-  3:3%,
-  4:4%,
-  5: 5%,
-  5y5:5.5%,
-  6: 6%,
-  7: 7%,
-  8: 8%,
-  9: 9%,
-  10: 10%,
-  12: 12%,
-  14: 14%,
-  16: 16%,
-  18: 18%,
-  20: 20%,
-  22: 22%,
-  25: 25%,
-  27: 27%,
-  30: 30%,
-  32: 32%,
-  35: 35%,
-  36: 36%,
-  40: 40%,
-  50: 50%,
-  60: 60%,
-  70: 70%,
-  75: 75%,
-  80: 80%,
-  85: 85%,
-  90: 90%,
-  95: 95%,
-  100: 100%,
-  101: 101%,
-);
 
 @font-face {
-  font-family: 'Rawson';
-  src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
+  font-family: 'Scotia';
+  src: url("../../src/fonts/Scotia_Bd.ttf") format("opentype") !important;
 }
 
 html{
   scroll-behavior: smooth;
-  font-family: "Rawson", sans-serif;
+  font-family: "Scotia", sans-serif;
 }
 
 body {
-  font-family: "Rawson", sans-serif !important;
+  font-family: "Scotia", sans-serif !important;
   font-size: 18px;
   overflow-x: hidden;
   display: flex;
@@ -94,11 +40,7 @@ body {
   min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 
