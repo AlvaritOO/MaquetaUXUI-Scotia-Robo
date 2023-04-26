@@ -1,13 +1,6 @@
 @use '../custom' as *;
 
 
-.encuesta .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
-    color: var(--bs-btn-active-color);
-    background-color: var(--bs-btn-active-bg);
-    border-color: var(--bs-btn-active-border-color);
-    border: 1px solid #666 !important;
-  }
-
 //section carrusel
 section#carrusel {
     position: relative;
@@ -15,224 +8,18 @@ section#carrusel {
     z-index: -9;
 }
 
-.producto-banner-top{
-    background: url("../dist/img/image-vida-familiar.jpg") no-repeat center center;
-    height: 800px;
-}
-
-.container-button {
-    position: absolute;
-    bottom: 10rem;
-    left: 11.25rem;
-}
-
-h1.sub-carrusel{
-    color: $white;
-    text-align: left;
-    font-size: 2em;
-
-}
-
-.items-fijos {
-    position: relative;
-    bottom: 0px;
-    z-index: 99999;
-    height: 650px;
-    //color: #fff;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    p{
-        color: $white;
-        position: relative;
-        text-decoration: none;
-        transition: all 0.3s ease-in;
-        &:hover::after{
-            content: "";
-            position: absolute;
-            bottom: -8px;
-            width: 50%;
-            height: 5px;
-            left: 25%;
-            border-radius: 6px;
-            background: $secundario;
-            z-index: -9;
-            -webkit-animation: fadeInTop 1s alternate ease-in-out;
-            animation: fadeInTop 1s alternate ease-in-out;
-        }
-        a{
-            color: $white;
-            position: relative;
-            text-decoration: none;
-            transition: all 0.3s ease-in;
-        }
-    }
-    span.material-icons {
-        color: $white;
-        font-size: 4rem;
-
-    }
-}
-
-//Fin section carrusel
-
-//section caracteristicas
-.fbox-content {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 0;
-    max-width: 100%;
-    padding: 0 0.75rem;
-}
-
 #carateristicas p {
-    color: $gris-dark;
-}
-
-.fbox-icon span, .fbox-icon i{
-    height: 4rem;
-    padding: 0 0.75rem;
-    font-size: 3rem;
-}
-
-.fbox-icon svg {
-    height: 3rem;
-    padding: 0 0.75rem;
-    font-size: 2.5rem;
-}
-
-.fbox-content h3 {
-    font-weight: 600;
-    margin-bottom: 0;
-    color: #333;
-}
-
-.feature-box {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-}
-
-.feature-box{
-    position: relative;
-    transition: all 0.3s ease-in;
-    &:hover::before{
-        content: "";
-        position: absolute;
-        left: -4px;
-        bottom: 56px;
-        width: 40px;
-        height: 40px;
-        border-radius: 6px;
-        //background: $secundario;
-        z-index: -9;
-        -webkit-animation: fadeInRight 1s alternate ease-in-out;
-        animation: fadeInRight 1s alternate ease-in-out;
-    }
-}
-
-
-@keyframes fadeInRight {
-    from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-    }
-
-    to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-    }
-}
-
-//fin section caracteristicas
-
-//seccion planes
-
-#planes{
-    position: relative;
-    &:after{
-        position: absolute;
-        height: 59px;
-        content: "";
-        top: 542px;
-        display: block;
-        background-color: $secundario;
-        width: 101%;
-        -webkit-transform: rotate(-1deg);
-        transform: rotate(-1.5deg);
-        z-index: -99;
-    }
-    &:before{
-        position: absolute;
-        height: 58px;
-        content: "";
-        top: -32px;
-        display: block;
-        background-color: $secundario;
-        width: 100%;
-        -webkit-transform: rotate(-1deg);
-        transform: rotate(-1.5deg);
-        z-index: 9;
-        
-    }
-}
-
-.card-plan{
-    background: $gris-dark;
-    border-radius: 16px;
-    color: $white;
-    padding: 8px;
-    border: 2px solid $gris-dark;
-    &:hover{
-        border: 2px solid $white;
-    }
-    .acordeon-plan{
-
-        color: $white;
-    }
-    &:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-        transition: all 0.3s ease-in;
-    }
-    h3:nth-child(2) {
-        font-weight: 400;
-    }
+    color: $negro;
 }
 
 p.card-text a {
     min-height: 250px;
 }
 
-
 .back-white{
     background-color: $white;
     box-shadow: rgba(51, 51, 51, 0.131) 0px 7px 29px 0px;
 }
-
-
-.back-diagonal{
-    background-color: $secundario;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.acordeon-plan-interior {
-    background-color: $gris-dark;
-    color: $white;
-    border: 1px solid $gris-dark;
-}
-
-.card-plan .acordeon-plan div.accordion-item {
-    background-color: #FFFFFF;
-}
-
-//Fin seccion planes
 
 //divisores
 
@@ -243,7 +30,7 @@ p.card-text a {
 }
 
 .divisor-small {
-    border-bottom: 1px solid $gris-light;
+    border-bottom: 1px solid $negro;
     padding: 10px 29px 0px 29px;
     margin-bottom: 10px;
     width: 50%;
@@ -265,7 +52,7 @@ p.card-text a {
 .que-cubre li span {
     position: absolute;
     top: -1px;
-    color: $verde;
+    color: #32CD32;
     left: -30px;
 }
 
@@ -278,24 +65,18 @@ p.card-text a {
 .no-cubre li span {
     position: absolute;
     top: -1px;
-    color: $verde;
+    color: #32CD32;
     left: -30px;
 }
 
 .no-cubre li span {
     position: absolute;
     top: -1px;
-    color: $error;
+    color: red;
     left: -30px;
 }
 
-.backgris{
-    background-color: $backgris;
-}
-
-.back-gris-light{
-    color: #FAF6F5;
-}
+//Fin Coberturas y exclusiones
 
 .back-gradiente{
     
@@ -304,13 +85,12 @@ p.card-text a {
     border-radius: 24px;
     width: 600px;
     p, h2{
-        color: $black;
+        color: $negro;
     }
     span.material-icons-round{
         font-size: 3.5rem;
     }
 }
-//Fin Coberturas y exclusiones
 
 //Tabs Contenido
 
@@ -337,21 +117,16 @@ p.card-text a {
 }
 
 .accordion-button:not(.collapsed) {
-    
     border-radius: 8px;
     background-color:  #FFFFFF;
-    
   //  box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px, rgba(0, 0, 0, 0.1) 0px 7px 29px 0px;
 }
 
 .accordion-flush .accordion-item {
- 
     background-color:   #FFFFFF;;
     border-radius: 8px 8px 8px 8px;
-
     //box-shadow: rgba(100, 100, 111, 0.05) 0px 7px 29px 0px, rgba(0, 0, 0, 0.1) 0px 7px 29px 0px;
 }
-
 
 .accordion-button-alert {
     text-align: center;
@@ -359,24 +134,16 @@ p.card-text a {
     border: 2px solid;
     border-color: $g3 !important;
     border-radius: 8px !important;
-
 }
+
 .accordion-button:not(.collapsed) {
     border-radius: 8px;
     background-color:  #FFFFFF;
-
 }
+
 //Fin Tabs Contenido
 
 //categorias-productos
-
-#categorias{
-    background: $white; 
-}
-
-/*.splide__track{
-    padding-bottom: 100px;
-}*/
 
 .splide2 ul.splide__pagination {
     position: relative;
@@ -391,78 +158,9 @@ p.card-text a {
     margin: 5px 8px;
 }
 
-span.icono-destacada.material-icons-outlined {
-    border-radius: 4px;
-    padding: 8px;
-    border: 2px solid #FFB300;
-    margin: 0px 2px;
-    color: $gris-light;
-    font-size: 1rem;
-    &:hover{
-        color: $white;
-        border: 2px solid $primary;
-        transition: all 0.3s ease-in;
-        background-color: $primary;
-    }
-}
-
 .caracteristica-especial {
     height: 37px;
 }
-
-.nav.nav-tabs.tabs-categorias{
-    border-bottom: 0px solid $white;
-}
-
-.tab-content-categorias {
-    //border: 1px solid $gris-light;
-    border: 1px solid #0076A9;
-    border-radius: 8px;
-    background: $white;
-}
-
-.tabs-categorias button.nav-link {
-    font-size: 1rem;
-    font-weight: bolder;
-    padding: 16px 32px;
-    border-bottom: 15px;
-    border: 1px solid #ccc;
-    border-bottom: 0px solid;
-    border-radius: 12px 12px 0px 0px;
-}
-
-.nav-tabs .nav-link {
-    border-top-left-radius: var(--bs-nav-tabs-border-radius);
-    border-top-right-radius: var(--bs-nav-tabs-border-radius);
-    margin: -1px 8px;
-}
-
-.fix-icono {
-    position: absolute;
-    padding: 0px 8px;
-}
-
-.tabs-categorias .nav-link.active {
-    border-color: #0076A9;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-/*@-webkit-keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}*/
 
 .conoce-planes {
     display: flex;
@@ -471,7 +169,6 @@ span.icono-destacada.material-icons-outlined {
     gap: 10px;
     width: 100%;
     min-width: 375px;
-
     background: $r2;
     align-items: center;
     margin-top: 60px;
@@ -482,7 +179,6 @@ span.icono-destacada.material-icons-outlined {
     max-width: 900px;
     width: 100%;
     text-align: center;
-
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
@@ -516,11 +212,9 @@ span.icono-destacada.material-icons-outlined {
     }
 }
 
-
 .card-content .card-body a{
     padding: 0px;
     text-decoration: none;
-   
 }
 
 .container-btn {
@@ -530,7 +224,7 @@ span.icono-destacada.material-icons-outlined {
 
 a.h5{
     position: relative;
-    color: $gris-dark;
+    color: $negro;
     z-index: 9;
     padding-bottom: 4px;
     margin-bottom: 16px;
@@ -548,63 +242,8 @@ a.h5{
         z-index: -9;
     }
 }
-
 //fin categorias-productos
 
-//Clic to Call
-
-.content-ctc {
-    background-color: #ececec;
-    padding: 12px;
-    border-radius: 5px;
-}
-
-.ctc-open {
-    width: 330px;
-    position: fixed;
-    right: 13px;
-    visibility: hidden;
-    bottom: 100px;
-    background-color: $gris-light;
-    padding: 1px;
-    z-index: 999;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-.gradient-border {
-    --border-width: 3px;
-    border-radius: 8px;
-
-    &::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-        60deg,
-        $primary,
-        $secundario,
-        $primary
-    );
-    background-size: 300% 300%;
-    background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
-    animation: moveGradient 4s alternate infinite;
-    }
-}
-
-@keyframes moveGradient {
-    50% {
-    background-position: 100% 50%;
-    }
-}
-
-//Fin Clic to call
-
-//planes PostVenta
 
 .espaciado-cabecera{
     margin-top: 0px;
@@ -620,7 +259,7 @@ a.h5{
 
 section#PerdidaRenuncia p i {
     font-size: 3rem;
-    color: $verde;
+    color: #32CD32;
     padding: 22px;
     display: block;
 }
@@ -643,16 +282,6 @@ section#PerdidaRenuncia p i {
     }
 }
 
-.fecha-contratacion {
-    background: #FFF3DE;
-    border: 1px solid #B34A00;
-    border-radius: 28px;
-    padding: 2px 8px;
-    position: relative;
-    top: -4px;
-    font-size: 16px;
-}
-
 .carousel-caption.caption-pventa {
     left: 61%;
     text-align: left;
@@ -661,111 +290,11 @@ section#PerdidaRenuncia p i {
     top: 4.5em;
 }
 
-.box-item-cobertura {
-    padding: 10px;
-    border-radius: 8px;
-}
-
 
 .carousel-caption.caption-pventa h5{
     @include font-size(1.5rem);
 }
 
-.item-folleto {
-    border-radius: 8px;
-
-
-    &.segurofamiliar{
-        background: url("../../../build/img/foto-folleto1.jpg") no-repeat top center;
-        -moz-transition: background-size 2s ease-in;
-        background-size: 100%;
-        transition: all 0.3s ease-in;
-    }
-    &.seguroadulto{
-        background: url("../../../build/img/foto-folleto2.jpg") no-repeat top center;
-        -moz-transition: background-size 2s ease-in;
-        background-size: 100%;
-        transition: all 0.3s ease-in;
-    }
-    &.segurojoven{
-        background: url("../../../build/img/foto-folleto3.jpg") no-repeat top center;
-        -moz-transition: background-size 2s ease-in;
-        background-size: 100%;
-        transition: all 0.3s ease-in;
-    }
-
-    &:hover{
-        transition: all 0.3s ease-in;
-        background-size: 120%;
-    }
-}
-
-
-.contenido-gradiente {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 19%, rgba(0,0,0,1) 90%);
-    position: relative;
-    border-radius: 8px;
-    //background-image: url("/dist/img/foto-folleto1.jpg") no-repeat center center;
-    img{
-        position: absolute;
-        z-index: -1;
-    }
-    :hover{
-        transition: all 0.3s ease-in;
-        box-shadow: rgba(50, 50, 93, 0.4) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    }
-}
-
-.img-pdf i {
-    color: $white;
-    width: 53px;
-    height: 50px;
-    font-size: 1.5rem;
-}
-
-.descr-folleto {
-    color: $white;
-}
-
-p.descr-folleto a {
-    font-size: 0.8rem;
-    font-weight: normal;
-    text-align: left;
-    padding-top: 12px;
-    height: 108px;
-}
-
-.item-contenedor {
-    padding: 20px 20px 0px 20px;
-    border-radius: 8px;
-}
-
-.item-contenedor a {
-    text-align: center;
-    width: 100%;
-    font-weight: normal;
-    color: #fff;
-    text-decoration: none;
-    position: relative;
-    top: -20px;
-    display: block;
-}
-
-p.title-folleto {
-    font-size: 1.1rem;
-    font-weight: bolder;
-    padding-bottom: 8px;
-    color: $white;
-    border-bottom: 1px solid #ccc;
-    height: 70px;
-}
-
-
-//otros
-.espaciador{
-    height: 200px;
-}
 
 .btn-primary {
     font-style: normal;
@@ -781,156 +310,11 @@ p.title-folleto {
 }
 
 .btn-primary:hover {
-    color: $white;
-    background: $r4;
+    color: $blanco;
+    background: $r2;
     border-radius: 8px;
 }
 
-
-.contenedor-imagen-categoria {
-    height: 650px;
-    background-color: $gris-dark;
-    background: url("../../../build/img/image-vida-familiar.jpg") no-repeat center center;
-}
-
-.owl-carousel {
-    padding-top: 415px;
-}
-
-.owl-carousel .owl-item img {
-    display: block !important;
-    width: 79px !important;
-    text-align: center;
-    margin: auto;
-}
-
-.owl-item.active {
-    border-radius: 9px;
-    height: 300px;
-}
-
-.owl-nav {
-    text-align: center;
-    width: 100%;
-}
-
-button.owl-prev span, button.owl-next span {
-    font-size: 34px;
-}
-
-.contenedor-item-owl{
-    background-color: rgba(255, 255, 255, 0.53);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    padding: 16px;
-    border: 1px solid $gris-light;
-    border-radius: 9px;
-    color: $white;
-    text-decoration: none;
-        &:hover{
-            -webkit-transition: all 0.3s ease-in;
-            transition: all 0.3s ease-in;
-            background-color: $primary;
-            color: $gris-dark;
-            border-color: $primary;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        }
-    p, a, h4{
-        text-decoration: none;
-        color: $white;
-        height: 65px;
-        &:hover{
-            color: $white;
-        }
-    }
-}
-//fin otros
-
-//requisitos
-
-.fondo-requisitos {
-    background: linear-gradient(270deg, #ffb300, #ce9101);
-    background-size: 400% 400%;
-    color:$white;
-    height: 300px;
-
-    -webkit-animation: AnimationName 20s ease infinite;
-    -moz-animation: AnimationName 20s ease infinite;
-    animation: AnimationName 20s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-section#requisitos div ol li::marker {
-    font-size: 1.1rem;
-    font-weight: bolder;
-}
-
-.imagen-req span{
-    font-size: 6.3rem;
-    text-align: center;
-}
-
-//Fin requisitos
-
-//siniestros
-
-.lista-siniestro{
-    :hover{
-        color: $primary;
-    }
-}
-
-//fin siniestros
-
-//wizard
-
-.wizard-mobile {
-    border-radius: 8px;
-    border: 1px solid $backgris;
-    width: 90%;
-}
-
-.contenedor-wizard {
-    margin-top: 172px;
-    margin-bottom: 42px;
-}
-
-.nombre-paso {
-    font-size: 0.7rem;
-    margin-bottom: 0px;
-}
-
-.paso-siguiente > p, .paso-siguiente > span {
-    color: $gris-light;
-}
-
-.paso-actual, .paso-siguiente {
-    padding: 8px 16px;
-}
-
-.now-next{
-    display: block;
-} 
-
-//fin wizard
-
-
-//CTC
 
 .btn-ayuda-flotante {
     position: fixed;
@@ -962,39 +346,12 @@ section#requisitos div ol li::marker {
     }
 }
 
-//Fin CTC
-
-
-//Forms
-span.ic-form {
-    position: relative;
-    top: 4px;
-    font-size: 1.0rem;
-}
-
-.alerta-error-validacion {
-    float: right;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 9999;
-}
-
-//Fijos
-.fijo-arriba {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
 .color-white{
-    color: $white;
+    color: $blanco;
     }
     
 .color-dark{
-    color: $backgris;
+    color: $negro;
     }
 
 .color-primary{
@@ -1002,81 +359,17 @@ span.ic-form {
 }
 
 .color-secondary{
-    color: $secondary;
+    color: $r3;
 }
 
-//herederos y beneficiarios
-
-.box-herederos {
-    border: 1px solid rgba(198, 198, 198, 0.429);
-    border-radius: 8px;
-    padding: 24px;
-    position: relative;
-    background-color: $white;
-    &:hover{
-        transition: all 0.3s ease-in;
-        box-shadow: 0px 0px 0px 2px #ffb300 inset;
-    }
-}
-
-.boton-eliminar-beneficiario {
-    background-color: $white;
-    padding: 13px 18px 19px 13px;
-    position: relative;
-    border: 1px solid;
-    border-radius: 5px;
-    border: 1px solid $white;
-    top: 4px;
-    span{
-        position: relative;
-    top: 10px;
-    right: -3px;
-    }
-}
-
-.content-nuevo-ben{
-    &::before{
-        content: "";
-        display: inline-block;
-        width: 0;
-        height: 0;
-        position: relative;
-        top: 11px;
-        left: 16px;
-        z-index: 99;
-        border-style: solid;
-        border-width: 0 18px 24.3px 18px;
-        border-color: transparent transparent $white transparent;
-        -webkit-filter: drop-shadow(1px -5px 2px #cccccc74);
-        filter: drop-shadow(1px -5px 3px #cccccc74);
-    }
-}
-
-//Fin herederos y beneficiarios
-
-//resumen
-
-.informativo li {
-    margin-left: 27px;
-    position: relative;
-    padding-bottom: 7px;
-}
-
-.informativo li span {
-    position: absolute;
-    top: -1px;
-    color: $primary;
-    left: -30px;
-}
 
 //pantalla exito
 
 #exito{
     h1, h3, h5, p{
-        color: $white;
+        color: $blanco;
     }
 }
-
 .video {
     position: fixed;
     z-index: -100;
@@ -1086,15 +379,6 @@ span.ic-form {
     min-height: 100%;
  //   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 //filter: grayscale(100%);
-}
-
-.cont-opaco{
-    background-color: rgba(0, 0, 0, 0.571);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -99;
-    top: 0px;
 }
 
  //skeleton
@@ -1109,7 +393,7 @@ span.ic-form {
         rgba(255, 255, 255, 0.5) 50%,
         rgba(255, 255, 255, 0) 80%
     ),
-    lightgray;
+    $blanco;
     background-repeat: repeat-y;
     background-size: 50px 500px;
     background-position: 0 0;
@@ -1124,30 +408,6 @@ span.ic-form {
 
  //fin skeleton
 
- //Alertas
-
-.alert-warning {
-    background: #FFECDE;
-    border: 1px solid #B34A00;
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;   
-}
-
-.alert-info {
-    background: #DEF4FF;
-    border: 1px solid #326295;
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-}
-
-.alert-danger {
-    background: #FFE1DE;
-    border: 1px solid #B21E27;
-    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-}
-
- //Fin Alertas
 
 .fondo-denunciar-siniestros {
     display: flex;
@@ -1179,11 +439,10 @@ span.ic-form {
     color: $r4;
 
     &:hover{
-        background-color: #F6F7F7;
-        color: $r1;
+        background-color: $r4;
+        color: $blanco;
     }
 }
-
 
 .card-content {
     display: flex;
@@ -1199,7 +458,7 @@ span.ic-form {
     transition: all 0.3s ease-in;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border: 2px solid $white;
+    border: 2px solid $blanco;
     border-radius: 16px;
     border-color: $g3;
     margin-top: 0px;
@@ -1227,7 +486,7 @@ span.ic-form {
     transition: all 0.3s ease-in;
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border: 2px solid $white;
+    border: 2px solid $blanco;
     border-radius: 16px;
     border-color: $g3;
     margin-top: 0px;

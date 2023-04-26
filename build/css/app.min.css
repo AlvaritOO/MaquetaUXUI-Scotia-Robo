@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*$btn-link-color: #ccc;
-$link-color: #fff !default;
-$link-color: #ccc;*/
 @font-face {
   font-family: "Rawson";
   src: url("../../src/fonts/RawsonRegular.otf") format("opentype") !important;
@@ -14,7 +11,7 @@ $link-color: #ccc;*/
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0095C5;
+  --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -38,7 +35,7 @@ $link-color: #ccc;*/
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #A6000E;
-  --bs-secondary: #0095C5;
+  --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -46,7 +43,7 @@ $link-color: #ccc;*/
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 166, 0, 14;
-  --bs-secondary-rgb: 0, 149, 197;
+  --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -197,77 +194,6 @@ $link-color: #ccc;*/
 
 /* rtl:end:remove */
 
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-/*.splide__track{
-    padding-bottom: 100px;
-}*/
-
-/*@-webkit-keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes back-gradiente-producto {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}*/
-
-@keyframes moveGradient {
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 @keyframes shine {
   to {
     background-position: 100% 0;
@@ -281,5 +207,3 @@ $link-color: #ccc;*/
 /* Color of 3 lines */
 
 /*mega menu*/
-
-/*end of mega menu*/

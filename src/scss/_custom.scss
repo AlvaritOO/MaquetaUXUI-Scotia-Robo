@@ -1,18 +1,4 @@
-$blue:    #0095C5 !default;
-
 //Variables
-$primary: #A6000E;
-$secundario: #FFB300;
-$secondary: $blue;
-$gris-dark: #3E4545;
-$gris-darker: #666;
-$white: #fff;
-$verde: #5B9E45;
-$error: #dc3545;
-$gris-light: #ccc;
-$gris-intermedio: #e7e7e7;
-$backgris: #F8F8F8;
-$black: #000;
 
 $r1: #6D0009;
 $r2: #A6000E;
@@ -28,50 +14,19 @@ $azul: #367AA4;
 $negro: #000000;
 $blanco: #FFFFFF;
 
-//Card
-$card-border-radius: 0px;
+$primary: #A6000E;
 
-//Tooltip
-$tooltip-border-radius: 8px;
-$tooltip-bg: $black;
-
-//Formularios
-$form-label-font-weight: bolder;  
-$form-label-margin-bottom: .1rem;
 
 //Alerts
 $alert-border-width:  4px;
 
-//Carousel
-$carousel-indicator-height: 8px;
-$carousel-indicator-active-bg: $primary;
-$carousel-indicator-opacity:         .3;
-
-$badge-font-size:                   0.9em;
-//Inputs
-$input-focus-border-color:$negro;
-$input-border-radius: 8px;
-$input-border-color: $negro;
-$input-focus-color: $negro;
-$input-focus-width: 3px;
-$input-focus-box-shadow: $negro;
-
-//Botones
-$btn-border-radius: 24px;
-$btn-line-height: 24px;
-$btn-padding-y: 11px;
-/*$btn-link-color: #ccc;
-$link-color: #fff !default;
-$link-color: #ccc;*/
-$btn-padding-x: 24px;
-$btn-close-color: #0076A9;
 
 //Navbar
 $navbar-toggler-border-radius: 0px;
 
 //Nav-tabs
 $nav-tabs-border-radius: 0px;
-$nav-tabs-link-active-color: $negro;
+
 
 //Modal
 $modal-content-border-radius: 24px;
