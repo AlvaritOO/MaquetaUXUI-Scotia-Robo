@@ -1,5 +1,4 @@
-//Variables
-
+//Variables Colores
 $r1: #6D0009;
 $r2: #A6000E;
 $r3: #BE061B;
@@ -13,8 +12,10 @@ $g4: #F6F6F6;
 $azul: #367AA4;
 $negro: #000000;
 $blanco: #FFFFFF;
+$verde: #138468;
 
-$primary: #A6000E;
+$primary: $r2;
+$secondary: $azul;
 
 //Modal
 $modal-content-border-radius: 24px;

@@ -359,17 +359,15 @@ section#PerdidaRenuncia p i {
 }
 
 .color-secondary{
-    color: $r3;
+    color: $secondary;
 }
 
+.color-green{
+    color: $verde;
+}
 
 //pantalla exito
 
-#exito{
-    h1, h3, h5, p{
-        color: $blanco;
-    }
-}
 .video {
     position: fixed;
     z-index: -100;
