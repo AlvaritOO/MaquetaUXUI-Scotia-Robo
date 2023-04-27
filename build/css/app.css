@@ -11558,25 +11558,30 @@ nav a.nav-link.active {
   color: #A6000E;
 }
 
+.btn.btn-continuar {
+  color: #EC111A;
+  height: 48px;
+}
+.btn.btn-continuar:hover {
+  color: #A6000E;
+}
+
 .btn.btn-volver {
-  border: 2px solid #0076A9;
-  color: #000;
-  background-color: #FFFFFF;
+  color: #333333;
   height: 48px;
 }
 .btn.btn-volver:hover {
-  background-color: #F6F7F7;
-  color: #000000;
+  color: #A6000E;
 }
 
 .btn.btn-text {
-  color: #0076A9;
-  background-color: #FFFFFF;
-  height: 48px;
+  color: #EC111A;
+  width: 128px;
 }
 .btn.btn-text:hover {
-  background: #F6F7F7;
+  background: #F6F6F6;
   border-radius: 8px;
+  color: #EC111A;
 }
 
 /*mega menu*/

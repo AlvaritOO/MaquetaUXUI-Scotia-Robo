@@ -169,22 +169,28 @@ nav a.nav-link.active{
     color: $primary;
 }
 
-.btn.btn-volver {
-    border: 2px solid #0076A9;
-    color: #000;
-    background-color: #FFFFFF;
+.btn.btn-continuar{
+    color: $r4;
     height: 48px;
     &:hover{
-        background-color: #F6F7F7;
-        color: $negro;
+        color: $r2;
     }
 }
-.btn.btn-text {
-    color: #0076A9;
-    background-color: #FFFFFF;
+
+.btn.btn-volver {
+    color: $g1;
     height: 48px;
     &:hover{
-        background: #F6F7F7;
+        color: $r2;
+    }
+}
+
+.btn.btn-text {
+    color: $r4;
+    width: 128px;
+    &:hover{
+        background: $g4;
         border-radius: 8px;
+        color: $r4;
     };
 }
