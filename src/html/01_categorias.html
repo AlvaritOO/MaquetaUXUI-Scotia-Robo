@@ -501,26 +501,46 @@
   <!--Fin Canales de contacto-->
 
   <!--Seccion Legales-->
-  <section id="legales" class="mt-5">
-    <div class="container mt-4 mb-4">
+  <section id="legales">
+    <div class="container mb-4 mt-5">
       <div class="col">
         <div class="col-lg-5 mx-auto mb-3">
           <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button id="01-pv-home-legales-acordion" class="accordion-button accordion-button-alert collapsed"
+                <button id="01-pv-home-legales-acordion" class="accordion-button accordion-button-alert collapsed acordion-legales"
                   type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                   aria-controls="collapseOne">
-                  <img src="../../src/img/svg/icon-contact-us.svg" alt=""class="me-3">
+                  <img src="../../build/img/svg/icon-contact-us.svg" alt=""class="me-3">
                   <strong class="color-primario">¿Necesitas ayuda?</strong>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p class="text-legales">
-                    
-                  </p>
+                  <h5 class="text-legales">
+                    Horario de atención: <br> Lunes a Viernes de 9:00 a 19:00 hrs.
+                  </h5>
+                  <div class="row">
+                    <div class="col-lg-12 col-md-6 mb-2 mt-3">
+                      <label for="exampleFormControlInput1" class="form-label">Mi nombre</label>
+                      <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="Escribe acá">
+                    </div>
+                    <div class="col-lg-12 col-md-6 mb-2 mt-3">
+                      <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                      <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="Ej. 123.456.789">
+                    </div>
+                  </div>
+                  <div class="text-center mt-5">
+                    <a class="btn btn-primary" target="_blank">
+                      Quiero que me llamen
+                    </a>
+                  </div>
+                  <div class="text-center mt-3">
+                    <a class="btn  fw-bold">
+                      Cancelar
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -530,20 +550,40 @@
         <div class="col-lg-5 mx-auto">
           <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button id="01-pv-home-legales-acordion" class="accordion-button accordion-button-alert collapsed"
-                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                  aria-controls="collapseOne">
+              <h2 class="accordion-header" id="headingTwo">
+                <button id="01-pv-home-legales-acordion" class="accordion-button accordion-button-alert collapsed acordion-legales"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                  aria-controls="collapseTwo">
                   <img src="../../src/img/svg/icon-information.svg" alt="" class="me-3">
                   <strong class="color-primario">Legales</strong>
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p class="text-legales">
-                    
-                  </p>
+                    <p class="text-legales">
+                Los riesgos son cubiertos por la compañía de seguros BNP Paribas Cardif Seguros de Vida S.A. Las
+                coberturas contratadas se rigen según las condiciones generales cuyos modelos se encuentran
+                depositados en la CMF bajo
+                los Códigos POL 220130353 (Vida); POL 320130357 Art. 3 Alternativa A (Muerte Accidental), y
+                Alternativa D (Reembolso de gastos médicos por Accidente); POL 320130600 Art. 4, Alternativa H
+                (Incapacidad total y permanente
+                2/3 por accidente); POL 320130369 Artículo 3° números 1,2,3,4,5 (Anticipo de Capital por
+                Enfermedades graves). POL 320130085 Art. 2º, letra I (Cantidad diaria por hospitalización a causa de
+                accidente).
+                Los seguros son intermediados por Corredora de Seguros La Cámara SpA, quien asume las obligaciones
+                propias de los seguros que intermedia en dependencias de Caja de Compensación de Asignación Familiar
+                Los Andes sin responsabilidad ni injerencia para esta última. La presente información sólo
+                representa un resumen de las coberturas y exclusiones, el detalle de éstas se encuentra en las
+                condiciones
+                generales antes mencionadas y en las condiciones particulares del seguro publicitado bajo la póliza
+                N° 220031390. Las condiciones generales pueden ser consultadas a través del sitio web de la Comisión
+                para el Mercado Financiero (<a href="www.suseso.cl" target="_blank">www.cmfchile.cl</a>), en la
+                opción Mercado de Seguros/Deposito de Pólizas. Condición: que se cumpla con los requisitos de
+                asegurabilidad. Forma de pago de la prima: mensual
+                según el plan contratado. Póliza del seguro puede ser contratada en todas las sucursales de Caja Los
+                Andes.</p>
+                
                 </div>
               </div>
             </div>
@@ -551,7 +591,6 @@
         </div>
       </div>
     </div>
-
   </section>
   <!--Fin Seccion Legales-->
 
@@ -579,211 +618,6 @@
   </section>
   <!--Fin Footer-->
 
-  <!--Fin Footer Consolidado-->
-
-  <!--modal FAQ-->
-  <div class="modal fade" id="modalFAQ" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title color-primary" id="exampleModalLabel">Preguntas Frecuentes</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="pregunta">
-            <div class="accordion accordion-flush pb-3 pt-3" id="accordionExample1">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading1">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                    ¿Qué es una cobertura?
-                  </button>
-                </h2>
-                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
-                  data-bs-parent="#accordionExample1">
-                  <div class="accordion-body">
-                    <strong>R: </strong>Riesgos o posibilidades de siniestros que están protegidos por la póliza. Cuando
-                    sucede uno de ellos, el asegurado está en la capacidad de solicitar una indemnización.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample2">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading2">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                    ¿Qué es una asistencia?
-                  </button>
-                </h2>
-                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
-                  data-bs-parent="#accordionExample2">
-                  <div class="accordion-body">
-                    <strong>R: </strong>Es un beneficio adicional a la cobertura del seguro, a la que puedes acceder sin
-                    costo adicional. La asistencia dependerá del seguro contratado.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample3">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading3">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                    ¿Qué es una carencia?
-                  </button>
-                </h2>
-                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
-                  data-bs-parent="#accordionExample3">
-                  <div class="accordion-body">
-                    <strong>R: </strong>La carencia es el periodo de tiempo durante el cual el asegurado no tendrá
-                    derecho
-                    a indemnización en caso de siniestro, contado desde la fecha de contratación del seguro. Para
-                    aquellos
-                    seguros que se deben ratificar conforme al Artículo 538 bis del Código de Comercio, la carencia se
-                    contará desde la ratificación (confirmación de la contratación).
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample4">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading4">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                    ¿Qué es la prima del seguro?
-                  </button>
-                </h2>
-                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
-                  data-bs-parent="#accordionExample4">
-                  <div class="accordion-body">
-                    <strong>R: </strong>La prima es el precio del seguro definido en la póliza de seguro.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample5">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading5">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                    ¿Dónde puedo ver el detalle de mi seguro?
-                  </button>
-                </h2>
-                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
-                  data-bs-parent="#accordionExample5">
-                  <div class="accordion-body">
-                    <strong>R: </strong>Puedes ver todos los detalles de tu seguro en la solicitud de
-                    incorporación/certificado de cobertura entregado al momento de la contratación. Si tienes dudas o
-                    quieres solicitar una copia, puedes contactar a la Corredora de Seguros La Cámara al fono +56 2 2964
-                    2400.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample6">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading6">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                    ¿Qué hacer en caso de siniestro?
-                  </button>
-                </h2>
-                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
-                  data-bs-parent="#accordionExample6">
-                  <div class="accordion-body">
-                    <strong>R: </strong>Una vez producido el siniestro, el asegurado o los beneficiarios puede denunciar
-                    un siniestro haciendo <a href="https://denuncioonline.cardifnet.com/#/login" target="”_blank”">click
-                      aquí</a> o pueden entregar el <a
-                      href="https://www.cajalosandes.cl/cs/groups/public/documents/document/bmnp/by0y/~edisp/denuncio-2019.pdf"
-                      target="”_blank”">siguiente formulario</a> en una Sucursal de Caja Los Andes.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion accordion-flush pb-3" id="accordionExample7">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="heading7">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                    ¿Cómo saber si mi seguro está activo?
-                  </button>
-                </h2>
-                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
-                  data-bs-parent="#accordionExample7">
-                  <div class="accordion-body">
-                    <strong>R: </strong>Para saber el estado actual de tu seguro, puedes contactarte con la Corredora de
-                    Seguros La Cámara al fono +56 2 2964 2400.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Fin modal FAQ-->
-
-  <!-- Modal terminos-->
-  <div class="modal fade" id="modaltyc" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title color-primary" id="exampleModalLabel">Terminos y Condiciones</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros nunc, porttitor et porta quis,
-          aliquet sit
-          amet ipsum. Phasellus rhoncus risus nec dolor scelerisque pulvinar. Praesent placerat pharetra ante, in
-          posuere tellus
-          convallis blandit. Aenean nibh nisl, aliquam eget dolor a, fermentum molestie nisl. Phasellus vel augue vel
-          magna rutrum
-          bibendum non vitae justo. Nam fermentum ante ac dolor dapibus placerat. Integer turpis felis, aliquet in risus
-          et,
-          blandit imperdiet urna. Sed tempus finibus mauris ac feugiat. Fusce ultricies justo a quam sodales, id
-          efficitur quam
-          sagittis. Donec in accumsan massa. Aenean risus diam, tristique nec turpis condimentum, facilisis consectetur
-          risus.
-          Duis scelerisque varius diam at euismod.
-
-          Nam sagittis, nulla nec facilisis imperdiet, massa orci pulvinar sem, quis scelerisque nisl ligula non felis.
-          Etiam
-          iaculis sed lectus sit amet gravida. Proin feugiat suscipit nisl, ac efficitur sem fermentum at. Praesent
-          fringilla
-          neque urna, eu rutrum nisl condimentum nec. Praesent sed ipsum vitae erat pharetra pellentesque et at neque.
-          Praesent
-          sit amet ante euismod, ornare tortor non, luctus mauris. Suspendisse eu rhoncus metus.
-
-          Donec tristique pulvinar tristique. Phasellus auctor massa ut velit cursus, quis vulputate magna aliquet.
-          Aliquam congue
-          neque nulla, vitae luctus ligula pretium ut. Sed pulvinar dictum nibh non consequat. Interdum et malesuada
-          fames ac ante
-          ipsum primis in faucibus. Nam id felis bibendum, varius massa cursus, ultricies neque. Vestibulum nec
-          fringilla metus.
-          Vestibulum quis orci sagittis, imperdiet augue non, suscipit velit. Duis auctor risus vitae mi ullamcorper
-          ultricies.
-          Pellentesque massa erat, pretium bibendum elit sit amet, hendrerit condimentum massa. Aenean pharetra suscipit
-          auctor.
-          Aliquam varius ex at turpis vestibulum fermentum. </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Fin Modal terminos-->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
