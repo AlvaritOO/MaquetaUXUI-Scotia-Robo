@@ -11360,6 +11360,15 @@ section#PerdidaRenuncia p i {
   flex-grow: 0;
 }
 
+.custom-card {
+  width: 482px !important;
+  height: 364px !important;
+}
+.custom-card div {
+  width: 482px !important;
+  height: 364px !important;
+}
+
 p.text-legales {
   font-size: 0.8rem;
 }

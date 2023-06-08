@@ -599,3 +599,13 @@ section#PerdidaRenuncia p i {
   order: 1;
   flex-grow: 0;
 }
+
+.custom-card {
+  width: 482px !important;
+  height: 364px !important;
+
+  div {
+    width: 482px !important;
+    height: 364px !important;
+  }
+}
