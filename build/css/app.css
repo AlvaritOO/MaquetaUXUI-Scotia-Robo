@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.modal-backdrop {
+  z-index: 1 !important;
+}
+
 @font-face {
   font-family: "Scotia";
   src: url("../../src/fonts/Scotia_Bd.ttf") format("opentype") !important;
