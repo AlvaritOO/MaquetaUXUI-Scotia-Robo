@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.modal-backdrop {
+  z-index: 1 !important;
+}
+
 @font-face {
   font-family: "Scotia";
   src: url("../../src/fonts/Scotia_Bd.ttf") format("opentype") !important;
@@ -10838,7 +10842,7 @@ p.card-text a {
 .que-cubre li span {
   position: absolute;
   top: -1px;
-  color: #32CD32;
+  color: #32cd32;
   left: -30px;
 }
 
@@ -10851,7 +10855,7 @@ p.card-text a {
 .no-cubre li span {
   position: absolute;
   top: -1px;
-  color: #32CD32;
+  color: #32cd32;
   left: -30px;
 }
 
@@ -10863,12 +10867,13 @@ p.card-text a {
 }
 
 .back-gradiente {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
   border-radius: 24px;
   width: 600px;
 }
-.back-gradiente p, .back-gradiente h2 {
+.back-gradiente p,
+.back-gradiente h2 {
   color: #000000;
 }
 .back-gradiente span.material-icons-round {
@@ -10898,17 +10903,17 @@ p.card-text a {
 
 .accordion-button:not(.collapsed) {
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .accordion-flush .accordion-item {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px 8px 8px 8px;
 }
 
 .accordion-button-alert {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 2px solid;
   border-color: #D6D6D6 !important;
   border-radius: 8px !important;
@@ -10916,7 +10921,7 @@ p.card-text a {
 
 .accordion-button:not(.collapsed) {
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .splide2 ul.splide__pagination {
@@ -11029,7 +11034,7 @@ a.h5::before {
 
 section#PerdidaRenuncia p i {
   font-size: 3rem;
-  color: #32CD32;
+  color: #32cd32;
   padding: 22px;
   display: block;
 }
@@ -11075,7 +11080,7 @@ section#PerdidaRenuncia p i {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 12px 24px;
   gap: 8px;
   background: #EC111A;
@@ -11291,9 +11296,8 @@ section#PerdidaRenuncia p i {
 .body-buttom {
   padding: 24px;
   height: auto;
-  width: 70%;
+  width: 80%;
   min-width: 375px;
-  /* Auto layout */
 }
 
 .select-button {
@@ -11318,12 +11322,12 @@ section#PerdidaRenuncia p i {
 
 .stepper-progres-active {
   width: 186.67px;
-  border: 3px solid #EC111A;
+  border: 3px solid #ec111a;
 }
 
 .stepper-progres {
   width: 186.67px;
-  border: 3px solid #D6D6D6;
+  border: 3px solid #d6d6d6;
 }
 
 .steppers {
@@ -11357,6 +11361,15 @@ section#PerdidaRenuncia p i {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.custom-card {
+  width: 482px !important;
+  height: 364px !important;
+}
+.custom-card div {
+  width: 482px !important;
+  height: 364px !important;
 }
 
 p.text-legales {
