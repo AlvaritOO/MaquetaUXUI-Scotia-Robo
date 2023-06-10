@@ -10970,7 +10970,6 @@ p.card-text a {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  width: 375px;
   background: #FFFFFF;
   border: 1px solid #D6D6D6;
   border-radius: 16px;
@@ -10981,7 +10980,6 @@ p.card-text a {
   border-radius: 16px;
   border-color: #D6D6D6;
   margin-top: 0px;
-  margin: 20px;
 }
 .card-content:hover {
   transition: all 0.3s ease-in;
@@ -11232,7 +11230,7 @@ section#PerdidaRenuncia p i {
   border-radius: 16px;
   border-color: #D6D6D6;
   margin-top: 0px;
-  margin: 20px;
+  margin: auto;
 }
 .card-content:hover {
   transition: all 0.3s ease-in;
@@ -11384,17 +11382,8 @@ section#PerdidaRenuncia p i {
   flex-grow: 0;
 }
 
-.card-custom-size {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  gap: 16px;
-  width: 376px;
-  height: 256px;
-  background: #ffffff;
-  border: 1px solid #d6d6d6;
-  border-radius: 20px;
+.custom-card {
+  width: 486px !important;
 }
 
 p.text-legales {
