@@ -143,7 +143,7 @@ $(function() {
     
 
     var splide = new Splide( '.splide', {
-      perPage: 3,
+      perPage: 2,
       rewind : false,
       gap: 20,
       speed: 400,
@@ -151,16 +151,16 @@ $(function() {
       pagination: "slider",
       width: '100%',
       autoHeight: true,
-     // height : '600px',
+      height : '350px',
       autoplay: true,
       pauseOnHover: true,
       breakpoints: {
         1024: {
-          perPage: 3,
+          perPage: 2,
           //height : '10rem',
         },
         834: {
-          perPage: 3,
+          perPage: 2,
           padding: '0rem',
           width: '50%'
         },

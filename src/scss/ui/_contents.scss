@@ -149,9 +149,10 @@ p.card-text a {
 }
 
 .splide__pagination__page.is-active {
-  background: $primary !important;
+  background: $r1 !important;
   transform: scale(1.4);
-  width: 20px;
+  height: 10px;
+  width: 10px;
   border-radius: 6px;
   margin: 5px 8px;
 }
