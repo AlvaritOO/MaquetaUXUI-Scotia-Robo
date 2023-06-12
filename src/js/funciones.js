@@ -91,6 +91,36 @@ if (toastTrigger2) {
   
   })
 }
+//toast nuevo beneficiario
+var toastTrigger3 = document.getElementById('liveToastBeneficiarioBtn')
+var toastLiveExample3 = document.getElementById('liveToastBeneficiario')
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample3)
+    toast.show();
+  
+  })
+}
+//toast Nserie correcto
+var toastTrigger4 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
+var toastLiveExample4 = document.getElementById('liveToastNserieA')
+if (toastTrigger4) {
+  toastTrigger4.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample4)
+    toast.show();
+  
+  })
+}
+//toast Nserie incorrecto
+var toastTrigger5 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
+var toastLiveExample5 = document.getElementById('liveToastNserieB')
+if (toastTrigger5) {
+  toastTrigger5.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample5)
+    toast.show();
+  
+  })
+}
 
 //Cuenta cantidad de beneficiarios
 
@@ -143,7 +173,7 @@ $(function() {
     
 
     var splide = new Splide( '.splide', {
-      perPage: 3,
+      perPage: 2,
       rewind : false,
       gap: 20,
       speed: 400,
@@ -151,16 +181,16 @@ $(function() {
       pagination: "slider",
       width: '100%',
       autoHeight: true,
-     // height : '600px',
+      height : '350px',
       autoplay: true,
       pauseOnHover: true,
       breakpoints: {
         1024: {
-          perPage: 3,
+          perPage: 2,
           //height : '10rem',
         },
         834: {
-          perPage: 3,
+          perPage: 2,
           padding: '0rem',
           width: '50%'
         },

@@ -31,7 +31,7 @@
     
   <div class="container">
     
-    <header class="d-flex flex-wrap align-items-center justify-content-between py-3">
+    <header class="d-flex flex-wrap align-items-center justify-content-between pt-3">
         <a id="01-categorias-navbar-logo-scotia" href="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
           <img src="../../build/img/svg/scotia-logo-red.svg">
@@ -193,7 +193,7 @@
         </h2>
         <div id="flush-collapseThree4" class="accordion-collapse collapse" aria-labelledby="flush-headingThree4" data-bs-parent="#accordionFlushExample">
           <section>
-            <card  id="01-categorias-card" class="card-content text-center ms-4" type="button">
+            <card  id="01-categorias-card" class="card-content text-center ms-4 custom-card" type="button">
               <a>
                 <img src="../../build/img/svg/icon-seguro_deportes.svg" class="mt-4 mb-3" alt="...";>
               </a>
@@ -208,7 +208,7 @@
                 <!--<div class="caracteristica-especial"></div>-->
               </div>
               <div class="container-btn gap-2 p-3">
-                <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
+                <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver más</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
                       viewBox="0 0 16 16">
                       <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -224,7 +224,7 @@
 
 <!--Tab Desktop-->
   <section id="tab" class="d-none d-lg-block">
-    <div class="row justify-content-center">
+    <div class="row justify-content-start">
       <div class="col-lg-9">
         <ul class="nav nav-tab1 justify-content-md-center">
           <li class="col-4 col-sm-2 text-center nav-item">
@@ -233,9 +233,10 @@
               Autos</a>
           </li>
           <li class="col-4 col-sm-2 text-center nav-item">
-            <a id="01-categorias-menu-escritorio-vida-salud" class="nav-link" id="asistencia-tab" data-bs-toggle="tab"
-              data-bs-target="#asistencia" type="button" role="tab" aria-controls="asistencia" aria-selected="false">
-              Vida y salud</a>
+            <a id="01-categorias-menu-escritorio-proteccion-patrimonial" class="nav-link" id="casodesinisestro-tab" data-bs-toggle="tab"
+              data-bs-target="#casodesinisestro" type="button" role="tab" aria-controls="casodesinisestro"
+              aria-selected="false">
+              Protección patrimonial</a>
           </li>
           <li class="col-4 col-sm-2 text-center nav-item">
             <a id="01-categorias-menu-escritorio-viajes" class="nav-link" id="nocubre-tab" data-bs-toggle="tab"
@@ -243,10 +244,9 @@
               Viajes</a>
           </li>
           <li class="col-4 col-sm-2 text-center nav-item">
-            <a id="01-categorias-menu-escritorio-proteccion-patrimonial" class="nav-link" id="casodesinisestro-tab" data-bs-toggle="tab"
-              data-bs-target="#casodesinisestro" type="button" role="tab" aria-controls="casodesinisestro"
-              aria-selected="false">
-              Protección patrimonial</a>
+            <a id="01-categorias-menu-escritorio-vida-salud" class="nav-link" id="asistencia-tab" data-bs-toggle="tab"
+              data-bs-target="#asistencia" type="button" role="tab" aria-controls="asistencia" aria-selected="false">
+              Vida y salud</a>
           </li>
         </ul>
       </div>
@@ -258,118 +258,80 @@
       <div class="container col-lg-12 plan-cards tab-pane active" id="datos" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
         <div class="tab-pane fade show active" id="vida" role="tabpanel" aria-labelledby="vida-tab">
           <div class="d-flex flex-wrap justify-content-center px-5 gap-4">
-
             <section class="splide" aria-label="Splide Basic HTML Example">
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide custom-card">
-                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
+                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column custom-card"
                       type="button">
                     <a>
-                      <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 card-img-top mb-3" alt="...">
+                      <img src="../../build/img/svg/icon-auto.svg" class="mt-4 card-img-top mb-3" alt="...">
                     </a>
                     <div class="card-body">
-                      <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
+                      <a id="01-categorias-tab-card-seguro" class="h2 mb-3 fw-bold text-black">Seguro de auto</a>
 
                       <p class="card-text ms-4 me-4">
                         <a>
-                          Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
+                          Un seguro de deporte es un tipo de seguro que brinda protección a los deportistas y a sus familias en caso de lesiones o accidentes relacionados con la práctica deportiva.
                         </a>
                       </p>
                       <!--<div class="caracteristica-especial"></div>-->
                     </div>
                     <div class="container-btn gap-2 p-3">
-                      <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
-                            viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                        </svg>
+                      <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
                       </a>
                     </div>
                     </div>
                   </li>
 
                   <li class="splide__slide custom-card">
-                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
+                    <div class="card-content custom-card text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
                     type="button">
                   <a>
-                    <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 card-img-top mb-3" alt="...">
+                    <img src="../../build/img/svg/icon-auto.svg" class="mt-4 card-img-top mb-3" alt="...">
                   </a>
                   <div class="card-body">
-                    <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
+                    <a id="01-categorias-tab-card-seguro" class="h2 mb-3 fw-bold text-black">Seguro RCI</a>
       
                     <p class="card-text ms-4 me-4">
                       <a>
-                        Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
+                        Un seguro de deporte es un tipo de seguro que brinda protección a los deportistas y a sus familias en caso de lesiones o accidentes relacionados con la práctica deportiva.
                       </a>
                     </p>
                     <!--<div class="caracteristica-especial"></div>-->
                   </div>
                   <div class="container-btn gap-2 p-3">
-                    <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
-                          viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                      </svg>
+                    <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
                     </a>
                   </div>
                     </div>
                   </li>
 
                   <li class="splide__slide custom-card">
-                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12d-flex flex-column" type="button">
-                      <a>
-                        <img src="../../build/img/svg/icon-seguro_deportes.svg" class="mt-4 card-img-top mb-3" alt="...">
-                      </a>
-                      <div class="card-body">
-                        <a id="01-categorias-tab-card-seguro" class="h2 mb-3 text-black">Seguro Deportes</a>
-                        <p class="card-text ms-4 me-4">
-                          <a>
-                            Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
-                          </a>
-                        </p>
-                        <!--<div class="caracteristica-especial"></div>-->
-                        <div class="container-btn gap-2 p-3">
-                          <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="splide__slide">
-                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
-                    type="button">
-                  <a>
-                    <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 card-img-top mb-3" alt="...">
-                  </a>
-                  <div class="card-body">
-                    <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
-      
-                    <p class="card-text ms-4 me-4">
-                      <a>
-                        Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
-                      </a>
-                    </p>
-                    <!--<div class="caracteristica-especial"></div>-->
-                  </div>
-                  <div class="container-btn gap-2 p-3">
-                    <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
-                          viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                      </svg>
+                    <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column custom-card"
+                      type="button">
+                    <a>
+                      <img src="../../build/img/svg/icon-auto.svg" class="mt-4 card-img-top mb-3" alt="...">
                     </a>
-                  </div>
+                    <div class="card-body">
+                      <a id="01-categorias-tab-card-seguro" class="h2 mb-3 fw-bold text-black">Seguro de auto</a>
+
+                      <p class="card-text ms-4 me-4">
+                        <a>
+                          Un seguro de deporte es un tipo de seguro que brinda protección a los deportistas y a sus familias en caso de lesiones o accidentes relacionados con la práctica deportiva.
+                        </a>
+                      </p>
+                      <!--<div class="caracteristica-especial"></div>-->
+                    </div>
+                    <div class="container-btn gap-2 p-3">
+                      <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
+                      </a>
+                    </div>
                     </div>
                   </li>
-              </ul>
-            </div>
+                </ul>
+              </div>
             </section>
-
           </div>
         </div>
       </div>
@@ -378,8 +340,8 @@
         <div class="row justify-content-center">
           <div class="splide__track">
             <!-- Cards vida y salud -->
-            <li class="splide__slide d-flex justify-content-center">
-              <div class="col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12">
+            <li class="splide__slide row justify-content-center">
+              <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12 col-12 ">
                 <div class="card-content text-center justify-content-center d-flex flex-column custom-card" type="button">
                   <a>
                     <img src="../../build/img/svg/icon-seguro_deportes.svg" class="mt-4 card-img-top mb-3" alt="...">
@@ -395,7 +357,7 @@
                     <!--<div class="caracteristica-especial"></div>-->
                   </div>
                   <div class="container-btn gap-2 p-3">
-                    <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
+                    <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver más</span>
                     </a>
                   </div>
                 </div>
@@ -404,46 +366,63 @@
           </div>
         </div>
       </div>
+      <!-- Viajes -->
       <div class="tab-pane" id="nocubre" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
-        <div class="row justify-content-center">
-
-          <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
-              type="button">
-            <a>
-              <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 card-img-top mb-3" alt="...">
-            </a>
-            <div class="card-body">
-              <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
-
-              <p class="card-text ms-4 me-4">
-                <a>
-                  Un seguro de robo es un tipo de seguro que cubre las pérdidas económicas causadas por el robo de bienes asegurados. Este tipo de seguro puede cubrir una amplia variedad de bienes, como joyas, electrónica, arte y otros objetos de valor.
-                </a>
-              </p>
-              <!--<div class="caracteristica-especial"></div>-->
-            </div>
-            <div class="container-btn gap-2 p-3">
-              <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                </svg>
+        <div class="container">
+          <div class="row">
+            <div class="card-content custom-card text-center col-3"
+                type="button">
+              <a>
+                <img src="../../build/img/svg/icon-vuelo.svg" class="mt-4 card-img-top mb-3" alt="...">
               </a>
+              <div class="card-body">
+                <a id="01-categorias-tab-card-seguro" class="h2 mb-3 text-dark fw-bold">Seguro de viaje</a>
+  
+                <p class="card-text ms-4 me-4">
+                  <a>
+                    Un seguro de deporte es un tipo de seguro que brinda protección a los deportistas y a sus familias en caso de lesiones o accidentes relacionados con la práctica deportiva.
+                  </a>
+                </p>
+                <!--<div class="caracteristica-especial"></div>-->
+              </div>
+              <div class="container-btn gap-2 p-3">
+                <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
+                </a>
+              </div>
+            </div>
+            <div class="card-content custom-card text-center col-lg-3 col-xl-3 col-xxl-2 col-md-3 col-sm-3 col-3 justify-content-between d-flex flex-column"
+            type="button">
+              <a>
+                <img src="../../build/img/svg/icon-vuelo.svg" class="mt-4 card-img-top mb-3" alt="...">
+              </a>
+              <div class="card-body">
+                <a id="01-categorias-tab-card-seguro" class="h2 mb-3 text-dark fw-bold">Seguro de viaje</a>
+  
+                <p class="card-text ms-4 me-4">
+                  <a>
+                    Un seguro de deporte es un tipo de seguro que brinda protección a los deportistas y a sus familias en caso de lesiones o accidentes relacionados con la práctica deportiva.                  </a>
+                </p>
+                <!--<div class="caracteristica-especial"></div>-->
+              </div>
+              <div class="container-btn gap-2 p-3">
+                <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Proteccion patrimonial -->
       <div class="tab-pane" id="casodesinisestro" role="tabpanel" aria-labelledby="casodesinisestro-tab" tabindex="0">
         <div class="row justify-content-center">
 
-          <div class="card-content text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
+          <div class="card-content custom-card text-center col-lg-3 col-xl-3 col-xxl-2 col-md-6 col-sm-12 col-12 justify-content-between d-flex flex-column"
               type="button">
             <a>
               <img src="../../build/img/svg/icons-tipo-seguro.svg" class="mt-4 card-img-top mb-3" alt="...">
             </a>
             <div class="card-body">
-              <a id="01-categorias-tab-card-seguro" class="h2 mb-3">Seguro de robo</a>
+              <a id="01-categorias-tab-card-seguro" class="h2 mb-3 text-dark fw-bold">Seguro de robo</a>
 
               <p class="card-text ms-4 me-4">
                 <a>
@@ -453,11 +432,7 @@
               <!--<div class="caracteristica-especial"></div>-->
             </div>
             <div class="container-btn gap-2 p-3">
-              <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold">Ver Más</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-short" 
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                </svg>
+              <a id="01-categorias-tab-card-seguro-btn-ver-mas" class="btn btn-ver-mas fw-bold p-3 py-2">Ver más</span>
               </a>
             </div>
           </div>

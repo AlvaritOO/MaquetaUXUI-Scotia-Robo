@@ -82,6 +82,25 @@
     </div>
 
   </section>
+  <!--Fin Header-->
+
+  <!-- Toast beneficiario inscrito correctamente -->
+  <div class="toast-container position-fixed top-0 end-0 p-3 me-5" style="z-index: 99991">
+    <div id="liveToastBeneficiario" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body row">
+          <div class="col-1">
+            <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+          </div>
+          <div class="col-10 ms-2">
+            <b>Beneficiario inscrito<br>correctamente</b>
+          </div>
+        </div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Toast beneficiario inscrito correctamente -->
 
   <!--wizard-->
   <section class=" mb-5">
@@ -320,10 +339,12 @@
             </div>
 
               <div class="col-lg mt-5 text-end">
-                <a class="btn btn-ver-mas fw-bold">
+                <a class="btn btn-ver-mas fw-bold" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   Cancelar
                 </a>
-                <a class="btn btn-guardar-cambios fw-bold">
+                <a id="liveToastBeneficiarioBtn" class="btn btn-guardar-cambios fw-bold" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   Guardar cambios
                 </a>
               </div>
