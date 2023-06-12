@@ -11336,7 +11336,7 @@ section#PerdidaRenuncia p i {
   height: auto;
   width: auto;
   min-width: 375px;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #d6d6d6;
   border-radius: 16px;
 }
 
@@ -11405,7 +11405,7 @@ section#PerdidaRenuncia p i {
 }
 
 .text-bg-incorrect {
-  background-color: #FBEDED !important;
+  background-color: #fbeded !important;
 }
 
 .form-check-input:checked {
