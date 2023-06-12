@@ -423,11 +423,11 @@ section#PerdidaRenuncia p i {
 }
 
 .btn.btn-ver-mas {
-    width: auto;
-    height: auto;
-    border: 2px solid $r4;
-    border-radius: 8px;
-    color: $r4;
+  width: auto;
+  height: auto;
+  border: 2px solid $r4;
+  border-radius: 8px;
+  color: $r4;
 
   &:hover {
     background-color: $r4;
@@ -436,16 +436,16 @@ section#PerdidaRenuncia p i {
 }
 
 .btn.btn-guardar-cambios {
-    width: auto;
-    height: auto;
-    background-color: $r4;
-    border-radius: 8px;
-    color: $blanco;
+  width: auto;
+  height: auto;
+  background-color: $r4;
+  border-radius: 8px;
+  color: $blanco;
 
-    &:hover{
-        border: 2px solid $r4;
-        color: $blanco;
-    }
+  &:hover {
+    border: 2px solid $r4;
+    color: $blanco;
+  }
 }
 
 .card-content {
@@ -541,22 +541,31 @@ section#PerdidaRenuncia p i {
   list-style: none;
 }
 
-.body-buttom{
-
-    height: auto;
-    width: 80%;
-    min-width: 375px;
+.body-buttom {
+  height: auto;
+  width: 80%;
+  min-width: 375px;
 }
 
-.body-buttom-beneficiario{
-    padding: 24px;
-    height: auto;
-    width: 80%;
-    min-width: 375px;
-    background: $light;
-    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-    border-radius: 16px;
+.body-buttom-beneficiario {
+  padding: 24px;
+  height: auto;
+  width: 80%;
+  min-width: 375px;
+  background: #f6f6f6;
+  border-radius: 16px;
 }
+
+.body-buttom-Detalle {
+  padding: 24px;
+  height: auto;
+  width: auto;
+  min-width: 375px;
+  border: 1px solid #D6D6D6;
+  border-radius: 16px;
+}
+
+Detalle plan seleccionado
 
 .select-button {
   border: none;
@@ -595,14 +604,6 @@ section#PerdidaRenuncia p i {
   height: auto;
 }
 
-.body-buttom{
-    padding: 24px;
-    height: auto;
-    background: $light;
-    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
-    border-radius: 16px;
-}
-
 .body-buttom-card {
   display: flex;
   flex-direction: column;
@@ -620,4 +621,9 @@ section#PerdidaRenuncia p i {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.form-check-input:checked {
+  background-color: #367aa4;
+  border-color: #367aa4;
 }

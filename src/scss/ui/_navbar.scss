@@ -177,6 +177,14 @@ nav a.nav-link.active{
     }
 }
 
+.btn.btn-continuar-desabilitado{
+    color: $g2;
+    height: 48px;
+    &:hover{
+        color: $r4;
+    }
+}
+
 .btn.btn-volver {
     color: $g1;
     height: 48px;
