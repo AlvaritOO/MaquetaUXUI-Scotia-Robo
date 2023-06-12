@@ -1,17 +1,17 @@
 //Variables Colores
-$r1: #6D0009;
-$r2: #A6000E;
-$r3: #BE061B;
-$r4: #EC111A;
+$r1: #6d0009;
+$r2: #a6000e;
+$r3: #be061b;
+$r4: #ec111a;
 
 $g1: #333333;
 $g2: #606060;
-$g3: #D6D6D6;
-$g4: #F6F6F6;
+$g3: #d6d6d6;
+$g4: #f6f6f6;
 
-$azul: #367AA4;
+$azul: #367aa4;
 $negro: #000000;
-$blanco: #FFFFFF;
+$blanco: #ffffff;
 $verde: #138468;
 
 $primary: $r2;
@@ -19,19 +19,17 @@ $secondary: $azul;
 
 //Modal
 $modal-content-border-radius: 24px;
-  //solucion error boostrap 5.1.1 sobre offcanvas
+//solucion error boostrap 5.1.1 sobre offcanvas
 .modal-backdrop {
   z-index: 1 !important;
 }
 
-
-
 @font-face {
-  font-family: 'Scotia';
+  font-family: "Scotia";
   src: url("../../src/fonts/Scotia_Bd.ttf") format("opentype") !important;
 }
 
-html{
+html {
   scroll-behavior: smooth;
   font-family: "Scotia", sans-serif;
 }
@@ -45,7 +43,11 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 700;
 }
 
@@ -54,8 +56,5 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
   top: 5px;
 }
 
-
-
-
 // Importar Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
