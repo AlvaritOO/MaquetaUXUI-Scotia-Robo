@@ -86,7 +86,8 @@
 
   <!-- Toast beneficiario inscrito correctamente -->
   <div class="toast-container position-fixed top-0 end-0 p-3 me-5" style="z-index: 99991">
-    <div id="liveToastBeneficiario" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="liveToastBeneficiario" class="toast align-items-center text-bg-success border-2 text-dark" role="alert"
+      aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
         <div class="toast-body row">
           <div class="col-1">
@@ -167,22 +168,23 @@
         <h4 class="mt-5 fw-bold">Beneficiarios: 1 (31%)</h4>
 
         <div class="col">
-          <div class="accordion accordion-flush mb-4 position-relative item-beneficiario"
-            id="accordionFlushExample">
+          <div class="accordion accordion-flush mb-4 position-relative item-beneficiario" id="accordionFlushExample">
             <div class="accordion-item itau rounded">
               <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <div class="ms-4 d-none d-sm-block d-sm-none d-md-block col-2"><b>Alejandra Martinez</b>
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                  aria-controls="flush-collapseOne">
+                  <div class="ms-4 d-none d-sm-block d-sm-none d-md-block"><b>Alejandra Martinez</b>
+                    <div class="ms-3 d-none d-sm-block d-sm-none d-md-block">21.395.937-0</div>
                   </div>
-                  <div class="ms-4 d-none d-sm-block d-sm-none d-md-block col-1">21.395.937-0</div>
+
                   <div class="ms-4 d-lg-none col">31%</div>
-                  <div class="ms-4 d-none d-lg-block col-5">Porcentaje de asignación <strong>31%</strong></div><!-- % en desktop-->
+                  <div class="ms-4 d-none d-lg-block col-7">Porcentaje de asignación <strong>31%</strong></div>
+                  <!-- % en desktop-->
                   <div class="ms-4 d-lg-none col-8">
                     <a class="ms-4 btn btn-outline-secondary">Editar</a>
                   </div>
-                  <div
-                    class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-sm-none d-md-none d-lg-block">
                     <a class=" position-absolute top-50 start-90 translate-middle link-dark">Editar</a>
                   </div>
 
@@ -190,75 +192,83 @@
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                 data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
 
-                  <form>
-                    <div class="row">
-                      <p class="mb-4 fst-italic link-secondary">(*) Campos Obligatorios</p>
+              </div>
 
-                      <div class="form-floating mb-3 col-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="RUT">
-                        <label for="floatingInput">RUT</label>
-                      </div>
-                      <div class="form-floating mb-3 col-3">
-                        <input type="text" class="form-control" id="floatingInput"
-                          placeholder="Nombre y apellido">
-                        <label for="floatingInput">Nombre</label>
-                      </div>
-                      <div class="form-floating mb-3 col-3">
-                        <input type="text" class="form-control" id="floatingInput"
-                          placeholder="Nombre y apellido">
-                        <label for="floatingInput">Primer Apellido</label>
-                      </div>
-                      <div class="form-floating mb-3 col-3">
-                        <input type="text" class="form-control" id="floatingInput"
-                          placeholder="Nombre y apellido">
-                        <label for="floatingInput">Segundo Apellido</label>
-                      </div>
-                    </div>
+              <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-body ms-5" style="width: 840px;">
+                  <div class="col body-buttom">
+                    <h3 class="fw-bold mt-5 pt-5 mb-4">Datos del beneficiariooooo</h3>
 
                     <div class="row">
-                      <div class="mb-3 col-6">
-                        <select class="form-select form-select-lg" aria-label="form-select-lg example">
-                          <option selected>Vínculo con el titular</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">Nombres</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">Apellidos</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">RUT</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: 12.345.678-0">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacionalidad"
+                          class="form-label">Vínculo con el titular</label>
+                        <select class="form-select select-button" aria-label="Default select example">
+                          <option selected>Selecciona una</option>
+                          <option value="1">Chilena</option>
+                          <option value="2">Alemana</option>
+                          <option value="3">Argentina</option>
+                          <option value="4">Austriaca</option>
                         </select>
                       </div>
-
-                      <div class="form-floating mb-3 col-6">
-                        <input type="number" class="form-control" id="floatingInput"
-                          placeholder="name@example.com">
-                        <label for="floatingInput">Porcentaje asignado</label>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">Porcentaje de asignación</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="0%">
                       </div>
                     </div>
+
 
                     <div class="row">
-                      <div class="form-floating mb-3 col">
-                        <input type="email" class="form-control" id="floatingInput"
-                          placeholder="name@example.com">
-                        <label for="floatingInput">Correo electrónico</label>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com">
                       </div>
-
-                      <div class="form-floating mb-3 col">
-                        <input type="email" class="form-control" id="floatingInput"
-                          placeholder="name@example.com">
-                        <label for="floatingInput">Confirme correo electrónico</label>
-                      </div>
-                    </div>
-
-                    <div class="row justify-content-end mt-4">
-                      <div class="col-12 text-end">
-                        <button type="button" class="btn btn-outline-secondary">Cancelar</button>
-                        <button type="button" class="btn btn-success text-secondary" id="liveToastBtn2">Guardar
-                          cambios</button>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label">Confirmar correo electrónico</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com">
                       </div>
                     </div>
-                  </form>
+
+                    <div class="col-lg mt-5 text-end">
+                      <a class="btn btn-ver-mas fw-bold" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        Cancelar
+                      </a>
+                      <a id="liveToastBeneficiarioBtn" class="btn btn-guardar-cambios fw-bold" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        Guardar cambios
+                      </a>
+                    </div>
+                  </div>
+
 
                 </div>
-
               </div>
             </div>
           </div>
@@ -266,9 +276,11 @@
         </div>
 
         <div class="container">
+          <p class="color-red fw-bold">Te faltan asignar 69%, agrega un nuevo beneficiario o asignalos a los ya
+            existentes. </p>
           <div class="row col-3 mb-4 fw-bold">
             <a class="text-secondary" role="button" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight1">
               Agregar
               <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -281,7 +293,7 @@
       </div>
 
 
-      <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight"
+      <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight1"
         aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-body ms-5" style="width: 840px;">
           <div class="col body-buttom">
@@ -338,16 +350,16 @@
               </div>
             </div>
 
-              <div class="col-lg mt-5 text-end">
-                <a class="btn btn-ver-mas fw-bold" type="button" data-bs-toggle="offcanvas"
+            <div class="col-lg mt-5 text-end">
+              <a class="btn btn-ver-mas fw-bold" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  Cancelar
-                </a>
-                <a id="liveToastBeneficiarioBtn" class="btn btn-guardar-cambios fw-bold" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                  Guardar cambios
-                </a>
-              </div>
+                Cancelar
+              </a>
+              <a id="liveToastBeneficiarioBtn" class="btn btn-guardar-cambios fw-bold" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                Guardar cambios
+              </a>
+            </div>
           </div>
 
 
