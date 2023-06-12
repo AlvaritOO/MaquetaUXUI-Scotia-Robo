@@ -149,10 +149,9 @@ p.card-text a {
 }
 
 .splide__pagination__page.is-active {
-  background: $r1 !important;
+  background: $primary !important;
   transform: scale(1.4);
-  height: 10px;
-  width: 10px;
+  width: 20px;
   border-radius: 6px;
   margin: 5px 8px;
 }
@@ -190,6 +189,7 @@ p.card-text a {
   justify-content: center;
   align-items: center;
   padding: 0px;
+  width: 375px;
   background: $blanco;
   border: 1px solid $g3;
   border-radius: 16px;
@@ -200,6 +200,7 @@ p.card-text a {
   border-radius: 16px;
   border-color: $g3;
   margin-top: 0px;
+  margin: 20px;
 
   &:hover {
     transition: all 0.3s ease-in;
@@ -422,11 +423,11 @@ section#PerdidaRenuncia p i {
 }
 
 .btn.btn-ver-mas {
-  width: auto;
-  height: auto;
-  border: 2px solid $r4;
-  border-radius: 8px;
-  color: $r4;
+    width: auto;
+    height: auto;
+    border: 2px solid $r4;
+    border-radius: 8px;
+    color: $r4;
 
   &:hover {
     background-color: $r4;
@@ -435,16 +436,16 @@ section#PerdidaRenuncia p i {
 }
 
 .btn.btn-guardar-cambios {
-  width: auto;
-  height: auto;
-  background-color: $r4;
-  border-radius: 8px;
-  color: $blanco;
-
-  &:hover {
-    border: 2px solid $r4;
+    width: auto;
+    height: auto;
+    background-color: $r4;
+    border-radius: 8px;
     color: $blanco;
-  }
+
+    &:hover{
+        border: 2px solid $r4;
+        color: $blanco;
+    }
 }
 
 .card-content {
@@ -465,7 +466,7 @@ section#PerdidaRenuncia p i {
   border-radius: 16px;
   border-color: $g3;
   margin-top: 0px;
-  margin: auto;
+  margin: 20px;
 
   &:hover {
     transition: all 0.3s ease-in;
@@ -540,19 +541,23 @@ section#PerdidaRenuncia p i {
   list-style: none;
 }
 
-.body-buttom {
-  height: auto;
-  width: 80%;
-  min-width: 375px;
+.body-buttom{
+    height: auto;
+    width: 80%;
+    min-width: 375px;
+
+    padding: 24px;
+    border-radius: 16px;
 }
 
-.body-buttom-beneficiario {
-  padding: 24px;
-  height: auto;
-  width: 80%;
-  min-width: 375px;
-  background: #f6f6f6;
-  border-radius: 16px;
+.body-buttom-beneficiario{
+    padding: 24px;
+    height: auto;
+    width: 80%;
+    min-width: 375px;
+    background: $light;
+    box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
+    border-radius: 16px;
 }
 
 .body-buttom-Detalle {
@@ -563,8 +568,6 @@ section#PerdidaRenuncia p i {
   border: 1px solid #D6D6D6;
   border-radius: 16px;
 }
-
-Detalle plan seleccionado
 
 .select-button {
   border: none;
@@ -603,6 +606,7 @@ Detalle plan seleccionado
   height: auto;
 }
 
+
 .body-buttom-card {
   display: flex;
   flex-direction: column;
@@ -639,4 +643,3 @@ Detalle plan seleccionado
   background-color: #367aa4;
   border-color: #367aa4;
 }
-
