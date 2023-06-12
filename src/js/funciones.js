@@ -92,6 +92,16 @@ if (toastTrigger2) {
   })
 }
 
+var toastTrigger2 = document.getElementById('liveToastBeneficiarioBtn')
+var toastLiveExample2 = document.getElementById('liveToastBeneficiario')
+if (toastTrigger2) {
+  toastTrigger2.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample2)
+    toast.show();
+  
+  })
+}
+
 //Cuenta cantidad de beneficiarios
 
 var cantBeneficiarios = document.getElementsByClassName('item-beneficiario').length;
