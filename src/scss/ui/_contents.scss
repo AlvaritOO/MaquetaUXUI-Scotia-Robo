@@ -100,6 +100,8 @@ p.card-text a {
 .accordion-button {
   text-align: left;
   background-color: $blanco;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px !important;
 }
 
 .accordion-buttons {
@@ -149,9 +151,10 @@ p.card-text a {
 }
 
 .splide__pagination__page.is-active {
-  background: $primary !important;
+  background: $r1 !important;
   transform: scale(1.4);
-  width: 20px;
+  height: 10px;
+  width: 10px;
   border-radius: 6px;
   margin: 5px 8px;
 }
@@ -189,7 +192,6 @@ p.card-text a {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  width: 375px;
   background: $blanco;
   border: 1px solid $g3;
   border-radius: 16px;
@@ -200,7 +202,6 @@ p.card-text a {
   border-radius: 16px;
   border-color: $g3;
   margin-top: 0px;
-  margin: 20px;
 
   &:hover {
     transition: all 0.3s ease-in;
@@ -310,36 +311,6 @@ section#PerdidaRenuncia p i {
   border-radius: 8px;
 }
 
-.btn-ayuda-flotante {
-  position: fixed;
-  background-color: $primary;
-  padding: 10px;
-  right: 1%;
-  bottom: 33px;
-  border-radius: 28px;
-  z-index: 99999;
-  cursor: pointer;
-  &:hover {
-    background-color: #006d94;
-    transition: all 0.3s ease-in;
-  }
-}
-
-.btn-ayuda-flotante c {
-  color: #f5f5f5;
-  position: relative;
-  top: -6px;
-  padding: 20px;
-  text-decoration: none;
-  span {
-    color: #f5f5f5;
-    position: relative;
-    text-decoration: none;
-    top: 8px;
-    left: -4px;
-  }
-}
-
 .color-white {
   color: $blanco;
 }
@@ -360,45 +331,9 @@ section#PerdidaRenuncia p i {
   color: $verde;
 }
 
-//pantalla exito
-
-.video {
-  position: fixed;
-  z-index: -100;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  //   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  //filter: grayscale(100%);
+.color-red {
+  color: $r4;
 }
-
-//skeleton
-
-.skeleton-loader:empty {
-  width: 100%;
-  height: 15px;
-  display: block;
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.5) 50%,
-      rgba(255, 255, 255, 0) 80%
-    ),
-    $blanco;
-  background-repeat: repeat-y;
-  background-size: 50px 500px;
-  background-position: 0 0;
-  animation: shine 1s infinite;
-}
-
-@keyframes shine {
-  to {
-    background-position: 100% 0;
-  }
-}
-
-//fin skeleton
 
 .fondo-denunciar-siniestros {
   display: flex;
@@ -466,7 +401,7 @@ section#PerdidaRenuncia p i {
   border-radius: 16px;
   border-color: $g3;
   margin-top: 0px;
-  margin: 20px;
+  margin: auto;
 
   &:hover {
     transition: all 0.3s ease-in;
@@ -524,6 +459,19 @@ section#PerdidaRenuncia p i {
   margin-top: 0px;
   margin: 20px;
   border-radius: 8px;
+}
+
+.card-custom-size {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  width: 376px;
+  height: 256px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
 }
 
 .carousel-indicators {
