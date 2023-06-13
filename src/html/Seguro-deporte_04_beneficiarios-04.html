@@ -252,7 +252,7 @@
 
           <h4 class="mt-5 fw-bold">Beneficiarios: 1 (31%)</h4>
 
-          <div class="col">
+          <div>
             <div
               class="accordion accordion-flush mb-4 position-relative item-beneficiario"
               id="accordionFlushExample"
@@ -260,7 +260,7 @@
               <div class="accordion-item itau rounded">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
-                    class="accordion-button collapsed row"
+                    class="accordion-button collapsed row m-0"
                     type="button"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasRight"
@@ -268,7 +268,7 @@
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    <div class="ms-2 d-none d-sm-block d-sm-none d-md-block col-2">
+                    <div class=" d-none d-sm-block d-sm-none d-md-block col-2">
                       <b>Alejandra Martinez</b>
                       <div class="text-start d-none d-sm-block d-sm-none d-md-block">
                         21.395.937-0
@@ -281,8 +281,8 @@
                     </div>
                     <!-- % en desktop-->
                     <div class="col d-grid gap-2 d-md-flex text-end d-none d-sm-none d-md-none d-lg-block ms-auto p-2 bd-highlight">
-                        <img class="me-5" src="../img/svg/icon-edit.svg" alt="" />
-                        <img src="../img/svg/icon-delete.svg" alt="" />
+                      <img class="me-5" src="../img/svg/icon-edit.svg" alt="" />
+                      <img src="../img/svg/icon-delete.svg" alt="" />
                     </div>
                     <!-- agregar boton svg de borrar -->
                   </button>
@@ -303,10 +303,21 @@
                 >
                   <div class="offcanvas-body ms-5" style="width: 840px">
                     <div class="col body-buttom">
-                      <h3 class="fw-bold mt-5 pt-5 mb-4">
-                        Datos del beneficiariooooo
-                      </h3>
+                      <!-- agregar boton Eliminar azul al lado de Datos de Beneficiario de color azul, con su svg de icon-delete -->
+                      <div class="row my-4">
+                        <div class="col-7">
+                          <h3 class="fw-bold">
+                            Datos del beneficiario
+                          </h3>
+                        </div>
+                        <div class="col-5 text-end">
+                          <button class="btn">
+                            <h6 class="fw-bold text-secondary">Eliminar  <img src="../img/svg/icon-delete.svg" alt="" height="14px" width="10px"/></h6>
+                          </button>
+                        </div>
+                      </div>
 
+                      
                       <div class="row">
                         <div class="col-lg-6 col-md-6 mb-2 mt-3">
                           <label
