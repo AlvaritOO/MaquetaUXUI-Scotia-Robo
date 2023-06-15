@@ -56,5 +56,9 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
   top: 5px;
 }
 
+a.text-secondary, a.text-secondary:hover, a.text-secondary:visited {
+  text-decoration: none;
+}
+
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

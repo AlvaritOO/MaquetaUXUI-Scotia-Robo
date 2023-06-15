@@ -38,6 +38,10 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
   top: 5px;
 }
 
+a.text-secondary, a.text-secondary:hover, a.text-secondary:visited {
+  text-decoration: none;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
