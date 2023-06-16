@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "Scotia";
   src: url("../../src/fonts/Scotia_Bd.ttf") format("opentype") !important;
@@ -34,8 +35,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #A6000E;
-  --bs-secondary: #367AA4;
+  --bs-primary: #a6000e;
+  --bs-secondary: #367aa4;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -73,7 +74,7 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #A6000E;
+  --bs-link-color: #a6000e;
   --bs-link-hover-color: #85000b;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
@@ -194,11 +195,7 @@
 
 /* rtl:end:remove */
 
-@keyframes shine {
-  to {
-    background-position: 100% 0;
-  }
-}
+/* toast */
 
 /* State when the navbar is collapsed */
 
