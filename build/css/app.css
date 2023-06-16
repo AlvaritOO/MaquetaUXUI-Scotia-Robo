@@ -38,6 +38,10 @@ div.nav.nav-tabs.tabs-categorias.mt-4 button span {
   top: 5px;
 }
 
+a.text-secondary, a.text-secondary:hover, a.text-secondary:visited {
+  text-decoration: none;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10895,6 +10899,8 @@ p.card-text a {
 .accordion-button {
   text-align: left;
   background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px !important;
 }
 
 .accordion-buttons {
@@ -11120,6 +11126,10 @@ section#PerdidaRenuncia p i {
   color: #138468;
 }
 
+.color-red {
+  color: #ec111a;
+}
+
 .fondo-denunciar-siniestros {
   display: flex;
   flex-direction: column;
@@ -11240,6 +11250,19 @@ section#PerdidaRenuncia p i {
   margin-top: 0px;
   margin: 20px;
   border-radius: 8px;
+}
+
+.card-custom-size {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  width: 376px;
+  height: 256px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  border-radius: 20px;
 }
 
 .carousel-indicators {
