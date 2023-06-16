@@ -260,13 +260,13 @@
               <div class="accordion-item itau rounded">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
-                    class="accordion-button collapsed row m-0"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseOne"
+                  class="accordion-button accordion-button-no-arrow collapsed row m-0"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
                   >
                     <div class=" d-none d-sm-block d-sm-none d-md-block col-2">
                       <b>Alejandra Martinez</b>
@@ -303,7 +303,6 @@
                 >
                   <div class="offcanvas-body ms-5" style="width: 840px">
                     <div class="col body-buttom">
-                      <!-- agregar boton Eliminar azul al lado de Datos de Beneficiario de color azul, con su svg de icon-delete -->
                       <div class="row my-4">
                         <div class="col-7">
                           <h3 class="fw-bold">
@@ -311,8 +310,11 @@
                           </h3>
                         </div>
                         <div class="col-5 text-end">
-                          <button class="btn">
-                            <h6 class="fw-bold text-secondary">Eliminar  <img src="../img/svg/icon-delete.svg" alt="" height="14px" width="10px"/></h6>
+                          <button class="btn" data-bs-toggle="modal" data-bs-target="#staticElimBen">
+                            <h6 class="fw-bold text-secondary">
+                              Eliminar
+                              <img class="ms-2" src="../img/svg/icon-delete.svg" alt="" height="14px" width="10px"/>
+                            </h6>
                           </button>
                         </div>
                       </div>
@@ -650,22 +652,14 @@
             Volver
           </a>
         </div>
-        <div class="container-btn gap-2 p-3 position-relative">
-          <a id="04-medios-pagos-btn-continuar" class="btn btn-continuar">
-            Continuar
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="36"
-              height="36"
-              fill="currentColor"
-              class="bi bi-arrow-right-circle-fill ms-2 mb-2"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-              />
-            </svg>
-          </a>
+        <div class="container-btn gap-2 p-2 position-relative">
+          <div class="container-btn gap-2 p-3 position-relative">
+            <button id="04-medios-pagos-btn-continuar" class="btn btn-g3" disabled style="border: none;">
+              Continuar<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                class="bi bi-arrow-right ms-2 mb-2" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+              </svg></button>
         </div>
       </div>
     </main>
@@ -858,6 +852,29 @@
     <!--Fin Footer-->
 
     <!--Fin Footer Consolidado-->
+
+    <!--Modal quitar beneficiario-->
+    <div class="modal fade" id="staticElimBen" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticElimBen" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-5 pb-2 pt-4">
+            <p><h4><strong>Quitar beneficiario</strong></h4>
+              <br>
+              <p><b>¿Estás seguro que deseas quitar este beneficiario?</b> Esta acción no se puede deshacer.</p>
+            </p>
+          </div>
+          <div class="container mb-4">
+            <div class="row justify-content-end">
+              <div class="col-8 text-end me-4">
+                <button type="button" class="btn btn-ver-mas fw-bold" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-guardar-cambios fw-bold">Confirmar eliminación</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

@@ -590,3 +590,7 @@ section#PerdidaRenuncia p i {
   background-color: #367aa4;
   border-color: #367aa4;
 }
+
+.accordion-button-no-arrow::after {
+  display: none !important;
+}

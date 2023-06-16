@@ -11380,6 +11380,10 @@ section#PerdidaRenuncia p i {
   border-color: #367aa4;
 }
 
+.accordion-button-no-arrow::after {
+  display: none !important;
+}
+
 p.text-legales {
   font-size: 0.8rem;
 }
