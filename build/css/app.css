@@ -11384,6 +11384,15 @@ section#PerdidaRenuncia p i {
   display: none !important;
 }
 
+.accordion-custom .accordion-button:not(.collapsed) {
+  color: #fff !important;
+  background-color: #a6000e !important;
+}
+.accordion-custom .accordion-body {
+  color: #fff !important;
+  background-color: #a6000e !important;
+}
+
 p.text-legales {
   font-size: 0.8rem;
 }
