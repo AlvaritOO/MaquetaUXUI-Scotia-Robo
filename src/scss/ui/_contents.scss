@@ -594,3 +594,15 @@ section#PerdidaRenuncia p i {
 .accordion-button-no-arrow::after {
   display: none !important;
 }
+
+.accordion-custom {
+  .accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: $primary !important; // Asegúrate de tener definido el color primario
+  }
+  
+  .accordion-body {
+    color: #fff !important;
+    background-color: $primary !important; // Asegúrate de tener definido el color primario
+  }
+}
