@@ -250,14 +250,14 @@
             debe sumar <strong>100%</strong>.
           </p>
 
-          <h4 class="mt-5 fw-bold text-success"><i class="bi bi-check-circle-fill"></i> Beneficiarios: 1 (100%)</h4>
+          <h4 class="mt-5 fw-bold text-success"><i class="bi bi-check-circle-fill"></i> Beneficiarios: 3 (100%)</h4>
 
           <div class="mt-4">
             <div
               class="accordion accordion-flush mb-4 position-relative item-beneficiario"
               id="accordionFlushExample"
             >
-              <div class="accordion-item itau rounded">
+              <div class="accordion-item rounded">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
                   class="accordion-button accordion-button-no-arrow collapsed row m-0"
@@ -275,9 +275,209 @@
                       </div>
                     </div>
 
-                    <div class="ms-4 d-lg-none col">100%</div>
+                    <div class="ms-4 d-lg-none col">33%</div>
                     <div class="ms-4 d-none d-lg-block col-7">
-                      Porcentaje asignado <strong>100%</strong>
+                      Porcentaje asignado <strong>33%</strong>
+                    </div>
+                    <!-- % en desktop-->
+                    <div class="col d-grid gap-2 d-md-flex text-end d-none d-sm-none d-md-none d-lg-block ms-auto p-2 bd-highlight">
+                      <img class="me-5" src="../../build/img/svg/icon-edit.svg" alt="" />
+                      <img src="../../build/img/svg/icon-delete.svg" alt="" />
+                    </div>
+                    <!-- agregar boton svg de borrar -->
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                ></div>
+
+                <div
+                  class="offcanvas offcanvas-end"
+                  style="width: 800px"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-body ms-5" style="width: 840px">
+                    <div class="col body-buttom">
+                      <div class="row my-4">
+                        <div class="col-7">
+                          <h3 class="fw-bold">
+                            Datos del beneficiario
+                          </h3>
+                        </div>
+                        <div class="col-5 text-end">
+                          <button class="btn" data-bs-toggle="modal" data-bs-target="#staticElimBen">
+                            <h6 class="fw-bold text-secondary">
+                              Eliminar
+                              <img class="ms-2" src="../../build/img/svg/icon-delete.svg" alt="" height="14px" width="10px"/>
+                            </h6>
+                          </button>
+                        </div>
+                      </div>
+
+                      
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >Nombres</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >Apellidos</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                          />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >RUT</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder="Ej.: 12.345.678-0"
+                          />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacionalidad"
+                            class="form-label"
+                            >Vínculo con el titular</label
+                          >
+                          <select
+                            class="form-select select-button"
+                            aria-label="Default select example"
+                          >
+                            <option selected>Selecciona una</option>
+                            <option value="1">Chilena</option>
+                            <option value="2">Alemana</option>
+                            <option value="3">Argentina</option>
+                            <option value="4">Austriaca</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >Porcentaje de asignación</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder="0%"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >Correo electrónico</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder="Ej.: nombre@dominio.com"
+                          />
+                        </div>
+                        <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                          <label
+                            for="exampleFormControlInput1"
+                            id="03-datos-titulares-formulario-nacimiento"
+                            class="form-label"
+                            >Confirmar correo electrónico</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control select-button"
+                            id="exampleFormControlInput1"
+                            placeholder="Ej.: nombre@dominio.com"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg mt-5 text-end">
+                        <a
+                          class="btn btn-ver-mas fw-bold"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasRight"
+                          aria-controls="offcanvasRight"
+                        >
+                          Cancelar
+                        </a>
+                        <a
+                          class="btn btn-guardar-cambios fw-bold"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasRight"
+                          aria-controls="offcanvasRight"
+                        >
+                          Guardar cambios
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion accordion-flush mb-4 position-relative item-beneficiario"
+              id="accordionFlushExample"
+            >
+              <div class="accordion-item rounded">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                  class="accordion-button accordion-button-no-arrow collapsed row m-0"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                  >
+                    <div class=" d-none d-sm-block d-sm-none d-md-block col-2">
+                      <b>Matias Gutierrez</b>
+                      <div class="text-start d-none d-sm-block d-sm-none d-md-block">
+                        22.783.269-8
+                      </div>
+                    </div>
+
+                    <div class="ms-4 d-lg-none col">33%</div>
+                    <div class="ms-4 d-none d-lg-block col-7">
+                      Porcentaje asignado <strong>33%</strong>
                     </div>
                     <!-- % en desktop-->
                     <div class="col d-grid gap-2 d-md-flex text-end d-none d-sm-none d-md-none d-lg-block ms-auto p-2 bd-highlight">
@@ -457,8 +657,206 @@
             class="accordion accordion-flush mb-4 position-relative item-beneficiario"
             id="accordionFlushExample"
           >
+            <div class="accordion-item rounded">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                class="accordion-button accordion-button-no-arrow collapsed row m-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+                >
+                  <div class=" d-none d-sm-block d-sm-none d-md-block col-2">
+                    <b>Luciana Sepulveda</b>
+                    <div class="text-start d-none d-sm-block d-sm-none d-md-block">
+                        25.459.378-0
+                    </div>
+                  </div>
+
+                  <div class="ms-4 d-lg-none col">34%</div>
+                  <div class="ms-4 d-none d-lg-block col-7">
+                    Porcentaje asignado <strong>34%</strong>
+                  </div>
+                  <!-- % en desktop-->
+                  <div class="col d-grid gap-2 d-md-flex text-end d-none d-sm-none d-md-none d-lg-block ms-auto p-2 bd-highlight">
+                    <img class="me-5" src="../../build/img/svg/icon-edit.svg" alt="" />
+                    <img src="../../build/img/svg/icon-delete.svg" alt="" />
+                  </div>
+                  <!-- agregar boton svg de borrar -->
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              ></div>
+
+              <div
+                class="offcanvas offcanvas-end"
+                style="width: 800px"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-body ms-5" style="width: 840px">
+                  <div class="col body-buttom">
+                    <div class="row my-4">
+                      <div class="col-7">
+                        <h3 class="fw-bold">
+                          Datos del beneficiario
+                        </h3>
+                      </div>
+                      <div class="col-5 text-end">
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#staticElimBen">
+                          <h6 class="fw-bold text-secondary">
+                            Eliminar
+                            <img class="ms-2" src="../../build/img/svg/icon-delete.svg" alt="" height="14px" width="10px"/>
+                          </h6>
+                        </button>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >Nombres</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >Apellidos</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >RUT</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder="Ej.: 12.345.678-0"
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacionalidad"
+                          class="form-label"
+                          >Vínculo con el titular</label
+                        >
+                        <select
+                          class="form-select select-button"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Selecciona una</option>
+                          <option value="1">Chilena</option>
+                          <option value="2">Alemana</option>
+                          <option value="3">Argentina</option>
+                          <option value="4">Austriaca</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >Porcentaje de asignación</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder="0%"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com"
+                        />
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label
+                          for="exampleFormControlInput1"
+                          id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label"
+                          >Confirmar correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control select-button"
+                          id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-lg mt-5 text-end">
+                      <a
+                        class="btn btn-ver-mas fw-bold"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        Cancelar
+                      </a>
+                      <a
+                        class="btn btn-guardar-cambios fw-bold"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        Guardar cambios
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           </div>
+
+
+
         </div>
 
         <div
@@ -628,11 +1026,11 @@
         <div class="container-btn gap-2 p-2 position-relative">
           <div class="container-btn gap-2 p-3 position-relative">
             <button id="04-medios-pagos-btn-continuar" class="btn btn-continuar" style="border: none;">
-              Continuar<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                class="bi bi-arrow-right ms-2 mb-2" viewBox="0 0 16 16">
-                <path
-                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
-              </svg></button>
+                Continuar<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-arrow-right ms-2 mb-2" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg></button>
         </div>
       </div>
     </main>
