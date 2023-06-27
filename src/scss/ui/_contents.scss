@@ -520,7 +520,7 @@ section#PerdidaRenuncia p i {
 .select-button {
   border: none;
   text-align: left;
-  border-radius: 0;
+  border-radius: 0 !important;
   border-bottom: 2px solid $negro;
 }
 
@@ -622,9 +622,18 @@ section#PerdidaRenuncia p i {
   width: 600px;
 }
 
+.img-cabecera {
+  width: 100% !important;
+}
+
 // Small devices
 @media (min-width: 100px) and (max-width: 575px) {
   .back-gradiente{
     width: 327px !important;
   }
+
+  .select-button{
+    width: 327px !important;
+  }
+
 }
