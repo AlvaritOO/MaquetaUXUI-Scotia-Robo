@@ -11412,7 +11412,7 @@ section#PerdidaRenuncia p i {
   width: 100% !important;
 }
 
-@media (min-width: 100px) and (max-width: 575px) {
+@media (min-width: 100px) and (max-width: 991px) {
   .back-gradiente {
     width: 327px !important;
   }
@@ -11427,6 +11427,14 @@ section#PerdidaRenuncia p i {
   }
   .custom-card {
     width: 327px !important;
+  }
+  .card-custom-size {
+    width: 327px !important;
+    height: 100% !important;
+    padding: 18px !important;
+  }
+  .margin-bottom-1 {
+    margin-bottom: 18px !important;
   }
 }
 p.text-legales {
