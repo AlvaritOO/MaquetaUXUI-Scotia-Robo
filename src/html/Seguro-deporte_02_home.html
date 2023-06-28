@@ -352,27 +352,38 @@
       <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
         <div class="container">
           <h3 class="fw-bold mb-3">¿Qué cubre este seguro?</h3>
-          <ul class="list-unstyled que-cubre fw-bold">
+          <ul class="list-unstyled que-cubre">
             <li class="my-2"><span class="material-icons-outlined me-2">done</span>
-              Muerte accidental
+              <b>Muerte accidental</b><p id="descripcion-1" style="display: none;"><b>:</b> La compañía aseguradora pagará al (a los) beneficiario(s) el monto asegurado, cuando la muerte del asegurado se haya producido durante la vigencia de esta cobertura y como consecuecia directa e inmediata de un accidente.</p>
             </li>
             <li class="my-2"><span class="material-icons-outlined me-2">done</span>
-              Fractura de huesos por accidente
+              <b>Fractura de huesos por accidente</b><p id="descripcion-2" style="display: none;"><b>:</b> Por resultado inmediato y directo de un accidente, al asegurado se le diagnostica la fractura de uno o más huesos, dentro de los 30 días siguientess a éste, la compañía aseguradora indemnizará el monto indicado en la póliza. Esta cobertura podrá contar con un deducible por evento cuyo monto será el indicado en la póliza, y el cual será siempre de cargo del asegurado.</p>
             </li>
             <li class="my-2"><span class="material-icons-outlined me-2">done</span>
-              Renta diaria por hospitalización por accidente
+              <b>Renta diaria por hospitalización por accidente</b><p id="descripcion-3" style="display: none;"><b>:</b> El asegurador cubre el riesgo de hospitalización del asegurado en un establecimiento hospitalario por accidente, indemnizándolo mediante el pago de un monto asegurado diario, por cada uno de los días que se encuentre hospitalizado, una vez transcurrido el periodo mínimo. El período de hospitalización debe ocurrir dentro del período de vigencia del asegurado en este contrato de seguro. Para tener derecho a la indemnización, el asegurado deberá permanecer hospitalizado por el periodo mínimo indicado en la póliza.</p>
             </li>
             <li class="my-2"><span class="material-icons-outlined me-2">done</span>
-              Robo con violencia o intimidación a las personas
+              <b>Robo con violencia o intimidación a las personas</b><p id="descripcion-4" style="display: none;"><b>:</b> En el evento que el asegurado reporte ser víctima del robo de su bicicleta o scooter mediante un robo con violencia o intimidación del que sea víctima, la compañía indemnizará de acuerdo a lo estipulado en esta póliza. Se entenderá por robo con “violencia” el uso de la fuerza física contra la persona del asegurado, y por robo con “intimidación”, el anuncio o amenaza dirigido al asegurado en orden a causarle un mal o daño inminente.</p>
             </li>
           </ul>
           <h3 class="fw-bold mb-3">¿Qué no cubre este seguro?</h3>
-          <ul class="list-unstyled no-cubre fw-bold">
+          <ul class="list-unstyled no-cubre">
             <li class="my-2"><span class="material-icons me-2">close</span>
-              Muerte Accidental y Renta diaria por Hospitalización por Accidente
+              <b>Muerte Accidental y Renta diaria por Hospitalización por Accidente</b><div id="descripcion-5" style="display: none;"><b>:</b> No se efectuará el pago del Monto Asegurado, cuando la muerte accidental se produzca como consecuencia de:
+                <ul class="list-unstyled mt-3">
+                  <li class="ms-0 mt-3">a) Guerra, declarada o no, invasión, acción de un enemigo extranjero, hostilidades u operaciones bélicas.</li>
+                  <li class="ms-0 mt-3">b) Lesiones auto-inferidas, atentados contra su propia vida, automutilación o autolesión, o por lesiones inferidas al Asegurado por terceros con su consentimiento, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
+                  <li class="ms-0 mt-3">c) Encontrarse el Asegurado bajo los efectos de drogas y/o alcohol y demás sustancias de efectos análogos o similares y cualquier lesión derivada de dicha ingestión, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
+                  <li class="ms-0 mt-3">d) Terremotos sobre 8 grados en escala de Mercalli (Según "Servicio Sismológico del Departamento de Geofísica de la Universidad de Chile").</li>
+                  <li class="ms-0 mt-3">e) Participación del Asegurado en fuerzas militares o policiales.</li>
+                  <li class="ms-0 mt-3">f) Comisión o participación del Asegurado o sus beneficiarios en actos calificados como delito según la ley, en calidad de autor, cómplice o encubridor. Las peleas o riñas también serán excluidas a excepción de que haya sido en legítima defensa.</li>
+                  <li class="ms-0 mt-3">g) Participación activa del Asegurado en actos de rebelión, revolución, sublevación, asonada, motín, conmoción civil, subversión incluidos los actos terroristas entendiéndose por acto terrorista toda conducta calificada como tal por la ley.</li>
+                  <li class="ms-0 mt-3">h) Participación en carreras, apuestas o competencias (remuneradas o no).</li>
+                </ul>
+              </div>
             </li>
             <li class="my-2"><span class="material-icons me-2">close</span>
-              Fractura de huesos por accidente
+              <b>Fractura de huesos por accidente</b><p id="descripcion-6" style="display: none;"><b>:</b> La cobertura no operará cuando el accidente se ocasione a consecuencia de fracturas debidas u ocasionadas por el desgaste natural de los huesos u osteoporosis, así como también fracturas patológicas, en asegurados con cualquiera de las enfermedades de base que causen debilitamiento y pérdida de la densidad ósea.</p>
             </li>
           </ul>
         </div>
@@ -380,9 +391,9 @@
     </div>
   </div>
   <div class="text-center gap-2 p-3">
-    <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn btn-ver-mas fw-bold">
+    <button id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" onclick="return mostrarOcultar(['descripcion-1', 'descripcion-2', 'descripcion-3', 'descripcion-4', 'descripcion-5', 'descripcion-6'], this)" class="btn btn-ver-mas fw-bold" type="button">
       Ver todos los detalles
-    </a>
+    </button>
   </div>
 </section>
 

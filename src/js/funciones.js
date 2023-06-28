@@ -214,3 +214,38 @@ $(function() {
 
 
 //skeleton
+
+function mostrarOcultar(ids, boton) {
+  var cambioAVisible = false;
+
+  // Comprueba si alguno de los elementos está oculto
+  for (var i = 0; i < ids.length; i++) {
+    var elemento = document.getElementById(ids[i]);
+    if (elemento && elemento.style.display == "none") {
+      cambioAVisible = true;
+      break;
+    }
+  }
+
+  // Muestra u oculta los elementos y cambia el texto del botón
+  for (var i = 0; i < ids.length; i++) {
+    var elemento = document.getElementById(ids[i]);
+    if (!elemento) {
+      continue;
+    }
+    if (cambioAVisible) {
+      elemento.style.display = "inline";
+    } else {
+      elemento.style.display = "none";
+    }
+  }
+
+  // Cambia el texto del botón
+  if (cambioAVisible) {
+    boton.textContent = "Ocultar detalles";
+  } else {
+    boton.textContent = "Ver todos los detalles";
+  }
+
+  return true;
+}
