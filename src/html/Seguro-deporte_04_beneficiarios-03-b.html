@@ -181,94 +181,156 @@
           <p>Recuerda, puedes designar <strong>hasta 7 beneficiarios</strong> por cobertura de fallecimiento <br> y la
             distribución que realizas entre los distintos beneficiarios debe sumar <strong>100%</strong>. </p>
   
-          <div class="container">
-            <div class="row mb-4 fw-bold">
-              <a class="text-secondary" role="button" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                Agregar
-                <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M31.25 18.6348C31.25 18.791 31.1816 18.9375 31.0449 19.0742C30.9277 19.1914 30.791 19.25 30.6348 19.25H21.2598V28.625C21.2598 28.8008 21.1914 28.9473 21.0547 29.0645C20.9375 29.1816 20.791 29.2402 20.6152 29.2402C20.459 29.2402 20.3125 29.1816 20.1758 29.0645C20.0586 28.9473 20 28.8008 20 28.625V19.25H10.625C10.4492 19.25 10.3027 19.1914 10.1855 19.0742C10.0684 18.9375 10.0098 18.791 10.0098 18.6348C10.0098 18.459 10.0684 18.3125 10.1855 18.1953C10.3027 18.0586 10.4492 17.9902 10.625 17.9902H20V8.61523C20 8.45898 20.0586 8.32227 20.1758 8.20508C20.3125 8.06836 20.459 8 20.6152 8C20.791 8 20.9375 8.06836 21.0547 8.20508C21.1914 8.32227 21.2598 8.45898 21.2598 8.61523V17.9902H30.6348C30.791 17.9902 30.9277 18.0586 31.0449 18.1953C31.1816 18.3125 31.25 18.459 31.25 18.6348Z"
-                    fill="#003399" />
+            <div class="container">
+              <div class="row mb-4 fw-bold">
+                <!-- Agregar pc -->
+                <a class="text-secondary d-none d-lg-block" role="button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  Agregar
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M31.25 18.6348C31.25 18.791 31.1816 18.9375 31.0449 19.0742C30.9277 19.1914 30.791 19.25 30.6348 19.25H21.2598V28.625C21.2598 28.8008 21.1914 28.9473 21.0547 29.0645C20.9375 29.1816 20.791 29.2402 20.6152 29.2402C20.459 29.2402 20.3125 29.1816 20.1758 29.0645C20.0586 28.9473 20 28.8008 20 28.625V19.25H10.625C10.4492 19.25 10.3027 19.1914 10.1855 19.0742C10.0684 18.9375 10.0098 18.791 10.0098 18.6348C10.0098 18.459 10.0684 18.3125 10.1855 18.1953C10.3027 18.0586 10.4492 17.9902 10.625 17.9902H20V8.61523C20 8.45898 20.0586 8.32227 20.1758 8.20508C20.3125 8.06836 20.459 8 20.6152 8C20.791 8 20.9375 8.06836 21.0547 8.20508C21.1914 8.32227 21.2598 8.45898 21.2598 8.61523V17.9902H30.6348C30.791 17.9902 30.9277 18.0586 31.0449 18.1953C31.1816 18.3125 31.25 18.459 31.25 18.6348Z"
+                      fill="#003399" />
+                  </svg>
+                </a>
+                <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-body ms-5" style="width: 840px;">
+                  <div class="col body-buttom">
+                    <h3 class="fw-bold mt-5 pt-5 mb-4">Datos del beneficiario</h3>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">Nombres</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">Apellidos</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">RUT</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: 12.345.678-0">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacionalidad"
+                          class="form-label fw-bold">Vínculo con el titular</label>
+                        <select class="form-select select-button" aria-label="Default select example">
+                          <option selected>Selecciona uno</option>
+                          <option value="1">Chilena</option>
+                          <option value="2">Alemana</option>
+                          <option value="3">Argentina</option>
+                          <option value="4">Austriaca</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">Porcentaje de asignación</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="0%">
+                      </div>
+                    </div>
+        
+        
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">Correo electrónico</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com">
+                      </div>
+                      <div class="col-lg-6 col-md-6 mb-2 mt-3">
+                        <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
+                          class="form-label fw-bold">Confirmar correo electrónico</label>
+                        <input type="email" class="form-control select-button" id="exampleFormControlInput1"
+                          placeholder="Ej.: nombre@dominio.com">
+                      </div>
+                    </div>
+        
+                      <div class="col-lg mt-5 text-end">
+                        <a class="btn btn-ver-mas fw-bold">
+                          Cancelar
+                        </a>
+                        <button class="btn btn-guardar-cambios fw-bold" type="button">
+                          Guardar cambios
+                        </button>
+                      </div>
+                  </div>
+        
+        
+                </div>
+              </div>
+                <!-- Agregar mobile -->
+                <a class="text-secondary d-lg-none d-block" role="button" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                  Agregar
+                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M31.25 18.6348C31.25 18.791 31.1816 18.9375 31.0449 19.0742C30.9277 19.1914 30.791 19.25 30.6348 19.25H21.2598V28.625C21.2598 28.8008 21.1914 28.9473 21.0547 29.0645C20.9375 29.1816 20.791 29.2402 20.6152 29.2402C20.459 29.2402 20.3125 29.1816 20.1758 29.0645C20.0586 28.9473 20 28.8008 20 28.625V19.25H10.625C10.4492 19.25 10.3027 19.1914 10.1855 19.0742C10.0684 18.9375 10.0098 18.791 10.0098 18.6348C10.0098 18.459 10.0684 18.3125 10.1855 18.1953C10.3027 18.0586 10.4492 17.9902 10.625 17.9902H20V8.61523C20 8.45898 20.0586 8.32227 20.1758 8.20508C20.3125 8.06836 20.459 8 20.6152 8C20.791 8 20.9375 8.06836 21.0547 8.20508C21.1914 8.32227 21.2598 8.45898 21.2598 8.61523V17.9902H30.6348C30.791 17.9902 30.9277 18.0586 31.0449 18.1953C31.1816 18.3125 31.25 18.459 31.25 18.6348Z"
+                      fill="#003399" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Offcanvas mobile agregar -->
+        <div class="offcanvas offcanvas-bottom h-100 p-2" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottom">
+          <div class="offcanvas-header mt-3">
+            <h3 class="offcanvas-title fw-bold" id="offcanvasBottomLabel">Datos del beneficiario</h3>
+          </div>
+          <div class="offcanvas-body">
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">Nombres</label>
+              <input type="name" class="form-control select-button" id="exampleFormControlInput1" placeholder="">  
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">Apellidos</label>
+              <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">RUT</label>
+              <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="Ej.: 12.345.678-0">
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacionalidad" class="form-label fw-bold">Vínculo con el titular</label>
+              <select class="form-select select-button" aria-label="Default select example">
+                <option selected>Seleccione uno</option>
+                <option value="1">Chilena</option>
+                <option value="2">Alemana</option>
+                <option value="3">Argentina</option>
+                <option value="4">Austriaca</option>
+              </select>
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">Porcentaje de asignación
+                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" data-bs-toggle="popover" title="Popover Title" data-bs-content="Popover content">
+                    <circle cx="9.5" cy="10" r="6.15" stroke="black" stroke-width="0.7"/>
+                    <path d="M9.49789 7.41C9.35122 7.41 9.23122 7.37 9.13789 7.29C9.05122 7.20333 9.00789 7.08333 9.00789 6.93C9.00789 6.77667 9.05122 6.66 9.13789 6.58C9.23122 6.49333 9.35122 6.45 9.49789 6.45C9.64456 6.45 9.76122 6.49333 9.84789 6.58C9.94122 6.66 9.98789 6.77667 9.98789 6.93C9.98789 7.08333 9.94122 7.20333 9.84789 7.29C9.76122 7.37 9.64456 7.41 9.49789 7.41ZM9.13789 13.5V8.5H9.85789V13.5H9.13789Z" fill="black"/>
                 </svg>
+                </label>              
+              <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="0%">
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">Correo electrónico</label>
+              <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="Ej.: nombre@dominio.com">
+            </div>
+            <div class="mb-5">
+              <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento" class="form-label fw-bold">Confirmar correo electrónico</label>
+              <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="Ej.: nombre@dominio.com">
+            </div>
+            <div class="text-center mt-5">
+              <a class="btn btn-ver-mas fw-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                Cancelar
               </a>
+              <button class="btn btn-guardar-cambios fw-bold" type="button">
+                Guardar cambios
+              </button>
             </div>
-          </div>
         </div>
+        <!-- Offcanvas mobile agregar fin -->
       </div>
-
-
-      <div class="offcanvas offcanvas-end" style="width: 800px;" tabindex="-1" id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-body ms-5" style="width: 840px;">
-          <div class="col body-buttom">
-            <h3 class="fw-bold mt-5 pt-5 mb-4">Datos del beneficiario</h3>
-
-            <div class="row">
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">Nombres</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="">
-              </div>
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">Apellidos</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="">
-              </div>
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">RUT</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1"
-                  placeholder="Ej.: 12.345.678-0">
-              </div>
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacionalidad"
-                  class="form-label">Vínculo con el titular</label>
-                <select class="form-select select-button" aria-label="Default select example">
-                  <option selected>Selecciona una</option>
-                  <option value="1">Chilena</option>
-                  <option value="2">Alemana</option>
-                  <option value="3">Argentina</option>
-                  <option value="4">Austriaca</option>
-                </select>
-              </div>
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">Porcentaje de asignación</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1" placeholder="0%">
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1"
-                  placeholder="Ej.: nombre@dominio.com">
-              </div>
-              <div class="col-lg-6 col-md-6 mb-2 mt-3">
-                <label for="exampleFormControlInput1" id="03-datos-titulares-formulario-nacimiento"
-                  class="form-label">Confirmar correo electrónico</label>
-                <input type="email" class="form-control select-button" id="exampleFormControlInput1"
-                  placeholder="Ej.: nombre@dominio.com">
-              </div>
-            </div>
-
-              <div class="col-lg mt-5 text-end">
-                <a class="btn btn-ver-mas fw-bold">
-                  Cancelar
-                </a>
-                <a class="btn btn-guardar-cambios fw-bold">
-                  Guardar cambios
-                </a>
-              </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
 
 
 
