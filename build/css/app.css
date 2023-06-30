@@ -10812,6 +10812,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.popover {
+  --bs-popover-header-bg: #fff;
+  --bs-popover-header-border-bottom-width: 0;
+}
+
 section#carrusel {
   position: relative;
   top: 0px;
