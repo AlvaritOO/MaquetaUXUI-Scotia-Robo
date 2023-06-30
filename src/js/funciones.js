@@ -59,7 +59,7 @@ $("#pedirAsistencia").on('click', function (e) {
 
 $(function(){
   // Enables popover
-  $("[data-toggle=popover]").popover();
+  $("[data-bs-toggle=popover]").popover();
 });
 
 
