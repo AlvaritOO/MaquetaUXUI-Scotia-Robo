@@ -623,6 +623,11 @@ section#PerdidaRenuncia p i {
   width: 100% !important;
 }
 
+.position-toast {
+  top: 0 !important;
+  right: 0 !important;
+}
+
 // Small devices
 @media (min-width: 100px) and (max-width: 991px) {
   .back-gradiente{
@@ -662,6 +667,12 @@ section#PerdidaRenuncia p i {
     min-width: 327px !important;
     margin-right: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .position-toast {
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 
 }
