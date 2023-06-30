@@ -131,6 +131,16 @@ if (toastTrigger5) {
   
   })
 }
+//toast encuesta enviada
+var toastTrigger6 = document.getElementById('liveToastEncuestaBtn')
+var toastLiveExample6 = document.getElementById('liveToastEncuesta')
+if (toastTrigger6) {
+  toastTrigger6.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample6)
+    toast.show();
+
+  })
+}
 
 //Cuenta cantidad de beneficiarios
 
