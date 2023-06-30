@@ -11436,6 +11436,11 @@ section#PerdidaRenuncia p i {
   .text-small {
     font-size: 14px !important;
   }
+  .body-buttom-Detalle {
+    min-width: 327px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 p.text-legales {
   font-size: 0.8rem;
