@@ -101,6 +101,16 @@ if (toastTrigger3) {
   
   })
 }
+//toast nuevo beneficiario mobile
+var toastTrigger3 = document.getElementById('liveToastBeneficiarioBtnM')
+var toastLiveExample3 = document.getElementById('liveToastBeneficiarioM')
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample3)
+    toast.show();
+  
+  })
+}
 //toast Nserie correcto
 var toastTrigger4 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
 var toastLiveExample4 = document.getElementById('liveToastNserieA')
