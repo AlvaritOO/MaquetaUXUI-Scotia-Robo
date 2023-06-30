@@ -59,7 +59,7 @@ $("#pedirAsistencia").on('click', function (e) {
 
 $(function(){
   // Enables popover
-  $("[data-toggle=popover]").popover();
+  $("[data-bs-toggle=popover]").popover();
 });
 
 
@@ -101,6 +101,16 @@ if (toastTrigger3) {
   
   })
 }
+//toast nuevo beneficiario mobile
+var toastTrigger3 = document.getElementById('liveToastBeneficiarioBtnM')
+var toastLiveExample3 = document.getElementById('liveToastBeneficiarioM')
+if (toastTrigger3) {
+  toastTrigger3.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample3)
+    toast.show();
+  
+  })
+}
 //toast Nserie correcto
 var toastTrigger4 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
 var toastLiveExample4 = document.getElementById('liveToastNserieA')
@@ -119,6 +129,16 @@ if (toastTrigger5) {
     var toast = new bootstrap.Toast(toastLiveExample5)
     toast.show();
   
+  })
+}
+//toast encuesta enviada
+var toastTrigger6 = document.getElementById('liveToastEncuestaBtn')
+var toastLiveExample6 = document.getElementById('liveToastEncuesta')
+if (toastTrigger6) {
+  toastTrigger6.addEventListener('click', function () {
+    var toast = new bootstrap.Toast(toastLiveExample6)
+    toast.show();
+
   })
 }
 
@@ -214,3 +234,38 @@ $(function() {
 
 
 //skeleton
+
+function mostrarOcultar(ids, boton) {
+  var cambioAVisible = false;
+
+  // Comprueba si alguno de los elementos está oculto
+  for (var i = 0; i < ids.length; i++) {
+    var elemento = document.getElementById(ids[i]);
+    if (elemento && elemento.style.display == "none") {
+      cambioAVisible = true;
+      break;
+    }
+  }
+
+  // Muestra u oculta los elementos y cambia el texto del botón
+  for (var i = 0; i < ids.length; i++) {
+    var elemento = document.getElementById(ids[i]);
+    if (!elemento) {
+      continue;
+    }
+    if (cambioAVisible) {
+      elemento.style.display = "inline";
+    } else {
+      elemento.style.display = "none";
+    }
+  }
+
+  // Cambia el texto del botón
+  if (cambioAVisible) {
+    boton.textContent = "Ocultar detalles";
+  } else {
+    boton.textContent = "Ver todos los detalles";
+  }
+
+  return true;
+}

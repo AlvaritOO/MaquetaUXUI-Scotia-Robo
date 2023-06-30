@@ -42,11 +42,11 @@
               class="logo-bnp mr-4" alt="BNP Paribas Cardif"></a>
         </div>
 
-        <!--NavBar-->
+        <!--NavBar PC-->        
         <div>
-          <nav id="navbar-principal" class="navbar navbar-expand-lg">
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-none d-lg-block">
             <div class="container-fluid">
-
+        
               <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -54,29 +54,66 @@
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
               </button>
-
+        
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+        
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown-hover">
-                    <a id="05-resumen-navbar-contratar-seguros" class="nav-link active dropdown-hover-button"
-                      href="#">Contratar seguros</a>
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
                   </li>
                   <li class="nav-item dropdown-hover">
-                    <a id="05-resumen-navbar-ver-seguros-contratados" class="nav-link dropdown-hover-button"
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
                       href="#">Ver seguros contratados</a>
                   </li>
                   <li class="nav-item dropdown-hover">
-                    <a id="05-resumen-navbar-denunciar" class="nav-link dropdown-hover-button" href="#">Denunciar</a>
+                    <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+                    href="#">Denunciar</a>
                   </li>
                 </ul>
-
+        
               </div>
-
+        
             </div>
           </nav>
         </div>
-        <!--Fin NavBar-->
+        
+        <!--Fin NavBar PC-->
+      
+        <!--NavBar Mobile-->
+        <div>
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-lg-none d-block">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
+                href="#">Ver seguros contratados</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+              href="#">Denunciar</a>
+            </li>
+          </ul>
+        
+        </div>
+        <!--Fin NavBar Mobile-->
       </header>
     </div>
 
@@ -84,7 +121,7 @@
   <!--Fin Header-->
 
     <!-- Toast Número de serie validado correctamente -->
-    <div class="toast-container position-fixed top-0 end-0 p-3 me-5" style="z-index: 99991">
+    <div class="toast-container position-fixed position-toast p-3 me-5">
       <div id="liveToastNserieA" class="toast align-items-center text-bg-success border-2 text-dark" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
           <div class="toast-body row">
@@ -106,7 +143,7 @@
     <div class="container">
       <div class="d-flex align-items-center text-center justify-content-center mt-5 g-2">
         <div class="steppers">
-          <p><b>Mis datos personales</b> (Paso 4 de 4)</p>
+          <p class="text-muted"><b>Resumen y confirmación</b> (Paso 4 de 4)</p>
           <div class="stepper">
             <div type="button" class="stepper-progres-active"></div>
             <div type="button" class="stepper-progres-active"></div>

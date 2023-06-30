@@ -176,9 +176,6 @@ p.card-text a {
 }
 
 .titulo_planes {
-  min-width: 375px;
-  max-width: 900px;
-  width: 100%;
   text-align: center;
   font-weight: 700;
   font-size: 32px;
@@ -502,7 +499,7 @@ section#PerdidaRenuncia p i {
   padding: 24px;
   height: auto;
   width: 80%;
-  min-width: 375px;
+  min-width: 327px;
   background: $light;
   box-shadow: 0px 1px 2px rgba(91, 81, 73, 0.2);
   border-radius: 16px;
@@ -520,7 +517,7 @@ section#PerdidaRenuncia p i {
 .select-button {
   border: none;
   text-align: left;
-  border-radius: 0;
+  border-radius: 0 !important;
   border-bottom: 2px solid $negro;
 }
 
@@ -620,4 +617,62 @@ section#PerdidaRenuncia p i {
 
 .contenedor-comprobante {
   width: 600px;
+}
+
+.img-cabecera {
+  width: 100% !important;
+}
+
+.position-toast {
+  top: 0 !important;
+  right: 0 !important;
+}
+
+// Small devices
+@media (min-width: 100px) and (max-width: 991px) {
+  .back-gradiente{
+    width: 327px !important;
+  }
+
+  .select-button{
+    width: 327px !important;
+  }
+  
+  .accordion {
+    --bs-accordion-active-color: #000000;
+  }
+  .accordion-item {
+    border: 0 !important;
+  }
+
+  .custom-card {
+    width: 327px !important;
+  }
+
+  .card-custom-size {
+    width: 327px !important;
+    height: 100% !important;
+    padding: 18px !important;
+  }
+
+  .margin-bottom-1 {
+    margin-bottom: 18px !important;
+  }
+
+  .text-small {
+    font-size: 14px !important;
+  }
+
+  .body-buttom-Detalle {
+    min-width: 327px !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .position-toast {
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
 }

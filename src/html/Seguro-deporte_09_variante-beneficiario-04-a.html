@@ -58,59 +58,78 @@
             /></a>
           </div>
 
-          <!--NavBar-->
-          <div>
-            <nav id="navbar-principal" class="navbar navbar-expand-lg">
-              <div class="container-fluid">
-                <button
-                  class="navbar-toggler collapsed justify-content-around"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="toggler-icon top-bar"></span>
-                  <span class="toggler-icon middle-bar"></span>
-                  <span class="toggler-icon bottom-bar"></span>
-                </button>
-
-                <div
-                  class="collapse navbar-collapse"
-                  id="navbarSupportedContent"
-                >
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown-hover">
-                      <a
-                        id="04-medios-pagos-datos-titular-navbar-contratar-seguros"
-                        class="nav-link active dropdown-hover-button"
-                        href="#"
-                        >Contratar seguros</a
-                      >
-                    </li>
-                    <li class="nav-item dropdown-hover">
-                      <a
-                        id="04-medios-pagos-navbar-ver-seguros-contratados"
-                        class="nav-link dropdown-hover-button"
-                        href="#"
-                        >Ver seguros contratados</a
-                      >
-                    </li>
-                    <li class="nav-item dropdown-hover">
-                      <a
-                        id="04-medios-pagos-navbar-denunciar"
-                        class="nav-link dropdown-hover-button"
-                        href="#"
-                        >Denunciar</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+        <!--NavBar PC-->        
+        <div>
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
+                  </li>
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
+                      href="#">Ver seguros contratados</a>
+                  </li>
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+                    href="#">Denunciar</a>
+                  </li>
+                </ul>
+        
               </div>
-            </nav>
-          </div>
-          <!--Fin NavBar-->
+        
+            </div>
+          </nav>
+        </div>
+        
+        <!--Fin NavBar PC-->
+      
+        <!--NavBar Mobile-->
+        <div>
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-lg-none d-block">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
+                href="#">Ver seguros contratados</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+              href="#">Denunciar</a>
+            </li>
+          </ul>
+        
+        </div>
+        <!--Fin NavBar Mobile-->
         </header>
       </div>
     </section>
@@ -155,7 +174,7 @@
           class="d-flex align-items-center text-center justify-content-center mt-5 g-2"
         >
           <div class="steppers">
-            <p><b>Mis datos personales</b> (Paso 2 de 4)</p>
+            <p class="text-muted"><b>Beneficiarios</b> (Paso 2 de 4)</p>
             <div class="stepper">
               <div
                 id="04-medios-pagos-stepper-uno"
@@ -196,7 +215,7 @@
           <div class="container">
             <div class="body-buttom-beneficiario mt-3">
               <div class="row col-12">
-                <div class="col-1 p-3">
+                <div class="col-1 p-2">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -205,7 +224,7 @@
                   />
                 </div>
                 <div class="col-11">
-                  <h3>Herederos legales</h3>
+                  <h3 class="fw-bold">Herederos legales:</h3>
                   <p>
                     Son aquellos familiares que en caso en que fallezcas
                     recibirán todo o parte de tu herencia de acuerdo a lo que
@@ -217,7 +236,7 @@
 
             <div class="body-buttom-beneficiario mt-3">
               <div class="row">
-                <div class="col-1 p-3">
+                <div class="col-1 p-2">
                   <input
                     class="form-check-input"
                     type="radio"
@@ -227,7 +246,7 @@
                   />
                 </div>
                 <div class="col-11">
-                  <h3>Otros beneficiarios</h3>
+                  <h3 class="fw-bold">Otros beneficiarios:</h3>
                   <p>
                     Son las personas que designes cuando contratas tu seguro y
                     son las que recibiran el pago de tu cobertura en caso de que
@@ -374,7 +393,7 @@
                             class="form-select select-button"
                             aria-label="Default select example"
                           >
-                            <option selected>Selecciona una</option>
+                            <option selected>Selecciona uno</option>
                             <option value="1">Chilena</option>
                             <option value="2">Alemana</option>
                             <option value="3">Argentina</option>
@@ -386,7 +405,10 @@
                             for="exampleFormControlInput1"
                             id="03-datos-titulares-formulario-nacimiento"
                             class="form-label"
-                            >Porcentaje de asignación</label
+                            >Porcentaje de asignación<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<p><b>Nos referimos a:</b> <br> El porcentaje que designarás al beneficiario del seguro. Recordamos que entre todos tus beneficiarios tienen que sumar un total de 100%.</p>" data-bs-html="true">
+                              <circle cx="9.5" cy="10" r="6.15" stroke="black" stroke-width="0.7"/>
+                              <path d="M9.49789 7.41C9.35122 7.41 9.23122 7.37 9.13789 7.29C9.05122 7.20333 9.00789 7.08333 9.00789 6.93C9.00789 6.77667 9.05122 6.66 9.13789 6.58C9.23122 6.49333 9.35122 6.45 9.49789 6.45C9.64456 6.45 9.76122 6.49333 9.84789 6.58C9.94122 6.66 9.98789 6.77667 9.98789 6.93C9.98789 7.08333 9.94122 7.20333 9.84789 7.29C9.76122 7.37 9.64456 7.41 9.49789 7.41ZM9.13789 13.5V8.5H9.85789V13.5H9.13789Z" fill="black"/>
+                            </svg></label
                           >
                           <input
                             type="email"
@@ -574,7 +596,7 @@
                             class="form-select select-button"
                             aria-label="Default select example"
                           >
-                            <option selected>Selecciona una</option>
+                            <option selected>Selecciona uno</option>
                             <option value="1">Chilena</option>
                             <option value="2">Alemana</option>
                             <option value="3">Argentina</option>
@@ -586,7 +608,10 @@
                             for="exampleFormControlInput1"
                             id="03-datos-titulares-formulario-nacimiento"
                             class="form-label"
-                            >Porcentaje de asignación</label
+                            >Porcentaje de asignación<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<p><b>Nos referimos a:</b> <br> El porcentaje que designarás al beneficiario del seguro. Recordamos que entre todos tus beneficiarios tienen que sumar un total de 100%.</p>" data-bs-html="true">
+                              <circle cx="9.5" cy="10" r="6.15" stroke="black" stroke-width="0.7"/>
+                              <path d="M9.49789 7.41C9.35122 7.41 9.23122 7.37 9.13789 7.29C9.05122 7.20333 9.00789 7.08333 9.00789 6.93C9.00789 6.77667 9.05122 6.66 9.13789 6.58C9.23122 6.49333 9.35122 6.45 9.49789 6.45C9.64456 6.45 9.76122 6.49333 9.84789 6.58C9.94122 6.66 9.98789 6.77667 9.98789 6.93C9.98789 7.08333 9.94122 7.20333 9.84789 7.29C9.76122 7.37 9.64456 7.41 9.49789 7.41ZM9.13789 13.5V8.5H9.85789V13.5H9.13789Z" fill="black"/>
+                            </svg></label
                           >
                           <input
                             type="email"
@@ -774,7 +799,7 @@
                           class="form-select select-button"
                           aria-label="Default select example"
                         >
-                          <option selected>Selecciona una</option>
+                          <option selected>Selecciona uno</option>
                           <option value="1">Chilena</option>
                           <option value="2">Alemana</option>
                           <option value="3">Argentina</option>
@@ -786,7 +811,10 @@
                           for="exampleFormControlInput1"
                           id="03-datos-titulares-formulario-nacimiento"
                           class="form-label"
-                          >Porcentaje de asignación</label
+                          >Porcentaje de asignación<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<p><b>Nos referimos a:</b> <br> El porcentaje que designarás al beneficiario del seguro. Recordamos que entre todos tus beneficiarios tienen que sumar un total de 100%.</p>" data-bs-html="true">
+                              <circle cx="9.5" cy="10" r="6.15" stroke="black" stroke-width="0.7"/>
+                              <path d="M9.49789 7.41C9.35122 7.41 9.23122 7.37 9.13789 7.29C9.05122 7.20333 9.00789 7.08333 9.00789 6.93C9.00789 6.77667 9.05122 6.66 9.13789 6.58C9.23122 6.49333 9.35122 6.45 9.49789 6.45C9.64456 6.45 9.76122 6.49333 9.84789 6.58C9.94122 6.66 9.98789 6.77667 9.98789 6.93C9.98789 7.08333 9.94122 7.20333 9.84789 7.29C9.76122 7.37 9.64456 7.41 9.49789 7.41ZM9.13789 13.5V8.5H9.85789V13.5H9.13789Z" fill="black"/>
+                            </svg></label
                         >
                         <input
                           type="email"
@@ -861,7 +889,7 @@
               Te faltan asignar 1%, agrega un nuevo beneficiario o asignalos a
               los ya existentes.
             </p>
-            <div class="row col-3 mb-4 fw-bold">
+            <div class="row mb-4 fw-bold">
               <a
                 class="text-secondary"
                 role="button"
@@ -953,7 +981,7 @@
                     class="form-select select-button"
                     aria-label="Default select example"
                   >
-                    <option selected>Selecciona una</option>
+                    <option selected>Selecciona uno</option>
                     <option value="1">Chilena</option>
                     <option value="2">Alemana</option>
                     <option value="3">Argentina</option>
@@ -965,7 +993,10 @@
                     for="exampleFormControlInput1"
                     id="03-datos-titulares-formulario-nacimiento"
                     class="form-label"
-                    >Porcentaje de asignación</label
+                    >Porcentaje de asignación<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="button" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<p><b>Nos referimos a:</b> <br> El porcentaje que designarás al beneficiario del seguro. Recordamos que entre todos tus beneficiarios tienen que sumar un total de 100%.</p>" data-bs-html="true">
+                              <circle cx="9.5" cy="10" r="6.15" stroke="black" stroke-width="0.7"/>
+                              <path d="M9.49789 7.41C9.35122 7.41 9.23122 7.37 9.13789 7.29C9.05122 7.20333 9.00789 7.08333 9.00789 6.93C9.00789 6.77667 9.05122 6.66 9.13789 6.58C9.23122 6.49333 9.35122 6.45 9.49789 6.45C9.64456 6.45 9.76122 6.49333 9.84789 6.58C9.94122 6.66 9.98789 6.77667 9.98789 6.93C9.98789 7.08333 9.94122 7.20333 9.84789 7.29C9.76122 7.37 9.64456 7.41 9.49789 7.41ZM9.13789 13.5V8.5H9.85789V13.5H9.13789Z" fill="black"/>
+                            </svg></label
                   >
                   <input
                     type="email"
@@ -1034,7 +1065,7 @@
       </div>
 
       <div class="container d-flex justify-content-between mt-4 mb-2 g-2">
-        <div class="container-btn gap-2 p-3">
+        <div class="container-btn gap-2 p-3 pt-4">
           <a id="04-medios-pagos-btn-volver" class="btn btn-volver">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1190,7 +1221,7 @@
     <div class="modal fade" id="staticElimBen" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticElimBen" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body p-5 pb-2 pt-4">
+          <div class="modal-body p-4 pb-2 pt-4">
             <p><h4><strong>Quitar beneficiario</strong></h4>
               <br>
               <p><b>¿Estás seguro que deseas quitar este beneficiario?</b> Esta acción no se puede deshacer.</p>
@@ -1198,9 +1229,13 @@
           </div>
           <div class="container mb-4">
             <div class="row justify-content-end">
-              <div class="col-8 text-end me-4">
-                <button type="button" class="btn btn-ver-mas fw-bold" data-bs-dismiss="modal">Cancelar</button>
+              <div class="d-none d-lg-block text-end me-4">
+                <button type="button" class="btn btn-ver-mas fw-bold " data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class="btn btn-guardar-cambios fw-bold">Confirmar eliminación</button>
+              </div>
+              <div class="d-lg-none d-block text-center p-3">
+                <button type="button" class="btn btn-guardar-cambios fw-bold w-100 py-2">Confirmar eliminación</button>
+                <button type="button" class="btn btn-ver-mas fw-bold w-100 py-2 mt-1" data-bs-dismiss="modal">Cancelar</button>
               </div>
             </div>
           </div>

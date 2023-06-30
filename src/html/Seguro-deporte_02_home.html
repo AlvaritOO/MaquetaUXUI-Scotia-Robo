@@ -42,41 +42,78 @@
               class="logo-bnp mr-4" alt="BNP Paribas Cardif"></a>
         </div>
 
-      <!--NavBar-->        
-      <div>
-        <nav id="navbar-principal" class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-
-            <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown-hover">
-                  <a id="02-home-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
-                </li>
-                <li class="nav-item dropdown-hover">
-                  <a id="02-home-navbar-ver-seguros-contratados" class="nav-link dropdown-hover-button"
-                    href="#">Ver seguros contratados</a>
-                </li>
-                <li class="nav-item dropdown-hover">
-                  <a id="02-home-navbar-denunciar" class="nav-link dropdown-hover-button"
-                  href="#">Denunciar</a>
-                </li>
-              </ul>
-
+        <!--NavBar PC-->        
+        <div>
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-none d-lg-block">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
+                  </li>
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
+                      href="#">Ver seguros contratados</a>
+                  </li>
+                  <li class="nav-item dropdown-hover">
+                    <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+                    href="#">Denunciar</a>
+                  </li>
+                </ul>
+        
+              </div>
+        
             </div>
-
-          </div>
-        </nav>
-      </div>
-    <!--Fin NavBar-->
+          </nav>
+        </div>
+        
+        <!--Fin NavBar PC-->
+      
+        <!--NavBar Mobile-->
+        <div>
+          <nav id="navbar-principal" class="navbar navbar-expand-lg d-lg-none d-block">
+            <div class="container-fluid">
+        
+              <button class="navbar-toggler collapsed justify-content-around" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+        
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link active dropdown-hover-button" href="#">Contratar seguros</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-contratar-seguros" class="nav-link dropdown-hover-button"
+                href="#">Ver seguros contratados</a>
+            </li>
+            <div class="divisor"></div>
+            <li class="nav-item dropdown-hover">
+              <a id="01-categorias-navbar-denunciar" class="nav-link dropdown-hover-button"
+              href="#">Denunciar</a>
+            </li>
+          </ul>
+        
+        </div>
+        <!--Fin NavBar Mobile-->
     </header>
   </div>
 
@@ -90,51 +127,51 @@
 
     <section class="container">
         <div class="row">
-          <section class="col">
-            <card class="card-content text-center card-custom-size" type="button">
+          <section class="col margin-bottom-1">
+            <card class="card-content text-center card-custom-size">
                 <a>
                   <img src="../../build/img/svg/blanco-flecha.svg" class="mt-4 mb-3" alt="...";>
                 </a>
               <div class="card-body me-3 ms-3 mb-3">
                 <p id="02-home-card-cubre-ante-robo text-dark" class="fw-bold">Te Protege mientras realizas tu deporte favorito</p>
-                <h6 class="card-text">
+                <h6 class="card-text text-small">
                   Podrás contar con cobertura por fractura de huesos a causa de un accidente.
                 </h6>
               </div>
             </card>
           </section>
 
-        <section class="col">
-          <card class="card-content text-center card-custom-size" type="button">
-            <a>
-              <img src="../../build/img/svg/Page-1.svg" class="mt-4 mb-3" alt="...";>
-            </a>
-            <div class="card-body me-3 ms-3 mb-1">
-              <p id="02-home-card-hasta-dos-horas text-dark" class="fw-bold">
-                Te Indemnizara en caso de que sufras un accidente
-              </p>
-              <h6 class="card-text">
-                Mediante el pago de un monto diario, por <br>cada uno de los días que te encuentres hospitalizado, transcurrido el Periodo Mínimo de hospitalización de 3 días.
-              </h6>
-            </div>
-          </card>
-        </section>
+          <section class="col margin-bottom-1">
+            <card class="card-content text-center card-custom-size">
+              <a>
+                <img src="../../build/img/svg/Page-1.svg" class="mt-4 mb-3" alt="...";>
+              </a>
+              <div class="card-body me-3 ms-3 mb-1">
+                <p id="02-home-card-hasta-dos-horas text-dark" class="fw-bold">
+                  Te Indemnizara en caso de que sufras un accidente
+                </p>
+                <h6 class="card-text">
+                  Mediante el pago de un monto diario, por cada uno de los días que te encuentres hospitalizado, transcurrido el Periodo Mínimo de hospitalización de 3 días.
+                </h6>
+              </div>
+            </card>
+          </section>
         
-        <section class="col">
-          <card class="card-content text-center card-custom-size" type="button">
-            <a>
-              <img src="../../build/img/svg/signos-pesos.svg" class="mt-4 mb-3" alt="...";>
-            </a>
-            <div class="card-body me-3 ms-3 mb-3">
-              <p id="02-home-card-compra-protegida text-dark" class="fw-bold">
-                Te cubre ante muerte Accidental
-              </p>
-              <h6 class="card-text">
-                Cubre si Entregando a los beneficiarios, el capital asegurado. <br>(Tope de 900 UF)
-              </h6>
-            </div>
-          </card>
-        </section>
+          <section class="col margin-bottom-1">
+            <card class="card-content text-center card-custom-size">
+              <a>
+                <img src="../../build/img/svg/signos-pesos.svg" class="mt-4 mb-3" alt="...";>
+              </a>
+              <div class="card-body me-3 ms-3 mb-3">
+                <p id="02-home-card-compra-protegida text-dark" class="fw-bold">
+                  Te cubre ante muerte Accidental
+                </p>
+                <h6 class="card-text">
+                  Cubre si Entregando a los beneficiarios, el capital asegurado. <br>(Tope de 900 UF)
+                </h6>
+              </div>
+            </card>
+          </section>
 
         <section >
           <div class="text-center mt-5" type="button">
@@ -161,10 +198,10 @@
 <div class="conoce-planes text-center">
 
   <div class="mt-5">
-    <h2 class="titulo_planes fw-bold">Conoce nuestros planes</h2>
+    <h2 class="titulo_planes fw-bold mb-4 p-2">Conoce nuestros planes</h2>
   </div>
   <div class="row justify-content-center">
-    <div class= "col ms-2">
+    <div class= "col margin-bottom-1 mb-3">
       <div id="02-home-card-plan-uno" class="card-content">
         <div class="card-body">
             <h3 class="text-center fw-bold mt-5">Plan 1(Zero)</h3>
@@ -198,7 +235,7 @@
         </div>
       </div>
     </div>
-    <div class="col me-2">
+    <div class="col margin-bottom-1">
       <div id="02-home-card-plan-dos" class="card-content">
         <div class="card-body">
           <h3 class="text-center fw-bold mt-5">Plan 2</h3>
@@ -233,7 +270,7 @@
       </div>
     </div>
 
-    <div class="col me-2">
+    <div class="col margin-bottom-1">
       <div id="02-home-card-plan-tres" class="card-content">
         <div class="card-body">
           <h3 class="text-center fw-bold mt-5">Plan 3</h3>
@@ -266,7 +303,7 @@
       </div>
     </div>
     
-    <div class="col me-2">
+    <div class="col margin-bottom-1">
       <div id="02-home-card-plan-cuatro" class="card-content">
         <div class="card-body">
           <h3 class="text-center fw-bold mt-5">Plan 4</h3>
@@ -300,7 +337,7 @@
     </div>
   </div>
   
-  <div class="p-planes mt-4 mb-5">
+  <div class="p-planes mt-4 mb-5 p-2">
     <p>El seguro que vas a contratar se descontará mensualmente de tu cuenta corriente.</p>
   </div>
 </div>
@@ -308,51 +345,55 @@
 
 <section>
   <div class="container">
-    <h2 class="text-center pb-4 mb-4 mt-5 fw-bold">Cobertura y Exclusiones</h2>
+    <h1 class="text-center pb-4 mb-4 mt-5 fw-bold p-3">Cobertura y Exclusiones</h1>
   </div>
-  <div class="container d-flex align-items-center justify-content-center">
-    <div class="row container-fluid mb-4">
-        <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
-          <div class="col-lg-12 col-12 px-5">
-            <h4>¿Qué cubre este seguro?</h4>
-            <ul class="list-unstyled que-cubre">
-              <li><span class="material-icons-outlined me-2">done</span>
-                Utilización forzada por terceros de tarjetas bancarias o comerciales por giros realizados en cajeros automáticos
-              </li>
-              <li><span class="material-icons-outlined me-2">done</span>
-                Utilización forzada por terceros por giros realizados en ventanilla
-              </li>
-              <li><span class="material-icons-outlined me-2">done</span>
-                Protección de Robo Con Violencia o Intimidación en las Personas
-              </li>
-              <li><span class="material-icons-outlined me-2">done</span>
-                Compra Protegida
-              </li>
-              <li><span class="material-icons-outlined me-2">done</span>
-                Protección Patrimonial por Robo a Particulares por Robo con Violencia o Intimidación
-              </li>
-            </ul>
-            <h4>¿Qué no cubre este seguro?</h4>
-                <d class="fw-bold">Se aplican las siguientes exclusiones a todas y cada una de las coberturas contratadas:</d>
-                <p> Delitos en que tenga participación el Asegurado titular individualizado en las condiciones particulares o en la Solicitud de Incorporación, en la calidad de autor, cómplice o encubridor.</p>
-                <ul class="list-unstyled no-cubre">
-                  <li><span class="material-icons me-2">close</span>Para compra protegida</li>
-                  <li><span class="material-icons me-2">close</span>Para protección patrimonial</li>
+  <div class="container-fluid p-1 px-lg-5 mx-lg-5">
+    <div class="container mb-4">
+      <div id="02-home-cobertura-exclusiones-acordeon-cobertura">
+        <div class="container">
+          <h3 class="fw-bold mb-3">¿Qué cubre este seguro?</h3>
+          <ul class="list-unstyled que-cubre">
+            <li class="my-2"><span class="material-icons-outlined me-2">done</span>
+              <b>Muerte accidental</b><p id="descripcion-1" style="display: none;"><b>:</b> La compañía aseguradora pagará al (a los) beneficiario(s) el monto asegurado, cuando la muerte del asegurado se haya producido durante la vigencia de esta cobertura y como consecuecia directa e inmediata de un accidente.</p>
+            </li>
+            <li class="my-2"><span class="material-icons-outlined me-2">done</span>
+              <b>Fractura de huesos por accidente</b><p id="descripcion-2" style="display: none;"><b>:</b> Por resultado inmediato y directo de un accidente, al asegurado se le diagnostica la fractura de uno o más huesos, dentro de los 30 días siguientess a éste, la compañía aseguradora indemnizará el monto indicado en la póliza. Esta cobertura podrá contar con un deducible por evento cuyo monto será el indicado en la póliza, y el cual será siempre de cargo del asegurado.</p>
+            </li>
+            <li class="my-2"><span class="material-icons-outlined me-2">done</span>
+              <b>Renta diaria por hospitalización por accidente</b><p id="descripcion-3" style="display: none;"><b>:</b> El asegurador cubre el riesgo de hospitalización del asegurado en un establecimiento hospitalario por accidente, indemnizándolo mediante el pago de un monto asegurado diario, por cada uno de los días que se encuentre hospitalizado, una vez transcurrido el periodo mínimo. El período de hospitalización debe ocurrir dentro del período de vigencia del asegurado en este contrato de seguro. Para tener derecho a la indemnización, el asegurado deberá permanecer hospitalizado por el periodo mínimo indicado en la póliza.</p>
+            </li>
+            <li class="my-2"><span class="material-icons-outlined me-2">done</span>
+              <b>Robo con violencia o intimidación a las personas</b><p id="descripcion-4" style="display: none;"><b>:</b> En el evento que el asegurado reporte ser víctima del robo de su bicicleta o scooter mediante un robo con violencia o intimidación del que sea víctima, la compañía indemnizará de acuerdo a lo estipulado en esta póliza. Se entenderá por robo con “violencia” el uso de la fuerza física contra la persona del asegurado, y por robo con “intimidación”, el anuncio o amenaza dirigido al asegurado en orden a causarle un mal o daño inminente.</p>
+            </li>
+          </ul>
+          <h3 class="fw-bold mb-3">¿Qué no cubre este seguro?</h3>
+          <ul class="list-unstyled no-cubre">
+            <li class="my-2"><span class="material-icons me-2">close</span>
+              <b>Muerte Accidental y Renta diaria por Hospitalización por Accidente</b><div id="descripcion-5" style="display: none;"><b>:</b> No se efectuará el pago del Monto Asegurado, cuando la muerte accidental se produzca como consecuencia de:
+                <ul class="list-unstyled mt-3">
+                  <li class="ms-0 mt-3">a) Guerra, declarada o no, invasión, acción de un enemigo extranjero, hostilidades u operaciones bélicas.</li>
+                  <li class="ms-0 mt-3">b) Lesiones auto-inferidas, atentados contra su propia vida, automutilación o autolesión, o por lesiones inferidas al Asegurado por terceros con su consentimiento, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
+                  <li class="ms-0 mt-3">c) Encontrarse el Asegurado bajo los efectos de drogas y/o alcohol y demás sustancias de efectos análogos o similares y cualquier lesión derivada de dicha ingestión, ya sea estando en su pleno juicio o enajenado mentalmente.</li>
+                  <li class="ms-0 mt-3">d) Terremotos sobre 8 grados en escala de Mercalli (Según "Servicio Sismológico del Departamento de Geofísica de la Universidad de Chile").</li>
+                  <li class="ms-0 mt-3">e) Participación del Asegurado en fuerzas militares o policiales.</li>
+                  <li class="ms-0 mt-3">f) Comisión o participación del Asegurado o sus beneficiarios en actos calificados como delito según la ley, en calidad de autor, cómplice o encubridor. Las peleas o riñas también serán excluidas a excepción de que haya sido en legítima defensa.</li>
+                  <li class="ms-0 mt-3">g) Participación activa del Asegurado en actos de rebelión, revolución, sublevación, asonada, motín, conmoción civil, subversión incluidos los actos terroristas entendiéndose por acto terrorista toda conducta calificada como tal por la ley.</li>
+                  <li class="ms-0 mt-3">h) Participación en carreras, apuestas o competencias (remuneradas o no).</li>
                 </ul>
-            </div>
-          </div>
-    </div>
-
-          </div>
+              </div>
+            </li>
+            <li class="my-2"><span class="material-icons me-2">close</span>
+              <b>Fractura de huesos por accidente</b><p id="descripcion-6" style="display: none;"><b>:</b> La cobertura no operará cuando el accidente se ocasione a consecuencia de fracturas debidas u ocasionadas por el desgaste natural de los huesos u osteoporosis, así como también fracturas patológicas, en asegurados con cualquiera de las enfermedades de base que causen debilitamiento y pérdida de la densidad ósea.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-
   <div class="text-center gap-2 p-3">
-    <a id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" class="btn btn-ver-mas fw-bold">
+    <button id="02-home-cobertura-exclusiones-acordeon-cobertura-btn-ver-mas" onclick="return mostrarOcultar(['descripcion-1', 'descripcion-2', 'descripcion-3', 'descripcion-4', 'descripcion-5', 'descripcion-6'], this)" class="btn btn-ver-mas fw-bold" type="button">
       Ver todos los detalles
-    </a>
+    </button>
   </div>
 </section>
 
@@ -363,8 +404,11 @@
 
   <div class="p-planes container">
     <div class="row justify-content-center">
-      <div class="col-8">
-        <div class="mt-4 text-start"><strong>Instafit</strong> es una plataforma que pone a disposición del asegurado acceso a la plataforma líder de bienestar en Latinoamérica.
+      <div class="col-lg-8 col-11">
+        <div class="mt-4 text-start">
+          <p>
+            <strong>Instafit</strong> es una plataforma que pone a disposición del asegurado acceso a la plataforma líder de bienestar en Latinoamérica.
+          </p>
           <ul>
             <li>Podrás tener acceso gratuito a más de 1.500 rutinas lideradas por entrenadores en diferentes programas y disciplinas en español.</li>
             <li>Contamos con un amplio catálogo de disciplinas: rutinas de fuerza, cardio, yoga, baile, meditación y mucho más.</li>

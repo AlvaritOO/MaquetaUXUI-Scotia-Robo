@@ -62,3 +62,9 @@ a.text-secondary, a.text-secondary:hover, a.text-secondary:visited {
 
 // Importar Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom popover
+.popover {
+  --bs-popover-header-bg: #fff;
+  --bs-popover-header-border-bottom-width: 0;
+}
