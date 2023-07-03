@@ -112,7 +112,7 @@ if (toastTrigger3) {
   })
 }
 //toast Nserie correcto
-var toastTrigger4 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
+var toastTrigger4 = document.getElementById('liveToastNserieABtn')
 var toastLiveExample4 = document.getElementById('liveToastNserieA')
 if (toastTrigger4) {
   toastTrigger4.addEventListener('click', function () {
@@ -122,7 +122,7 @@ if (toastTrigger4) {
   })
 }
 //toast Nserie incorrecto
-var toastTrigger5 = document.getElementById('05-resumen-modal-tres-btn-validar-serie')
+var toastTrigger5 = document.getElementById('liveToastNserieBBtn')
 var toastLiveExample5 = document.getElementById('liveToastNserieB')
 if (toastTrigger5) {
   toastTrigger5.addEventListener('click', function () {
