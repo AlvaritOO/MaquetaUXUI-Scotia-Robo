@@ -11456,6 +11456,9 @@ section#PerdidaRenuncia p i {
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
+  .hide-mobile {
+    display: none !important;
+  }
 }
 p.text-legales {
   font-size: 0.8rem;
